@@ -52,3 +52,4 @@ zadání lehkých úloh podle objemu probrané látky.**
 24. Grafika, modely barev, barevná schémata
 25. Textové editory
 26. Tabulkové kalkulátory
+27. Trollení
