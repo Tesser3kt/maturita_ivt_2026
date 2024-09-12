@@ -9,7 +9,7 @@
 ## Maturitní okruhy
 *Součástí každé teoretické otázky jsou dva praktické úkoly. Jeden těžký s
 domácí přípravou, jeden lehký při zkoušce závislý na vylosovaném tématu.
-Vzorová zadání lehkých úloh budou postupně přibývat [zde](#lehké=úlohy).*
+Vzorová zadání lehkých úloh budou postupně přibývat [zde](#lehké-úlohy).*
 
 **Následující seznam bude postupně doplňován o detaily k teoretickým úlohám a o
 zadání lehkých úloh podle objemu probrané látky.**
@@ -62,6 +62,8 @@ zadání lehkých úloh podle objemu probrané látky.**
 25. Textové editory
 26. Tabulkové kalkulátory
 27. Trollení
+
+----------------------------
 
 ## Lehké úlohy
 
