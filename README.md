@@ -8,13 +8,22 @@
 
 ## Maturitní okruhy
 *Součástí každé teoretické otázky jsou dva praktické úkoly. Jeden těžký s
-domácí přípravou, jeden lehký při zkoušce závislý na vylosovaném tématu.*
+domácí přípravou, jeden lehký při zkoušce závislý na vylosovaném tématu.
+Vzorová zadání lehkých úloh budou postupně přibývat [zde](#lehké=úlohy).*
 
 **Následující seznam bude postupně doplňován o detaily k teoretickým úlohám a o
 zadání lehkých úloh podle objemu probrané látky.**
 
 ### Hardware
 1. Data, informace, bit, byte. Číselné soustavy – převody a početní operace
+    - Co je datum. Co je informace. Příklady.
+    - Vlastnosti, které dělají z data informaci.
+    - Cyklus zpracování dat: vstup --> zpracování --> výstup. Příklady.
+    - Datové jednotky počítače: bit, byte, slovo.
+    - Číselné soustavy: hlavně dvojková, osmičková, šestnáctková. Příklady použití.
+    - Základní aritmetické operace v číselných soustavách.
+    - Převod desítková <--> dvojková/osmičková/šestnáctková.
+    - *Něco jsem zapomněl/přidal navíc/špatně napsal? Opravte to.*
 2. Hardware – základní deska, CPU, vnitřní paměti, grafická karta
 3. Externí paměť (HDD, SSD, ...), záznam dat
 4. I/O zařízení
@@ -53,3 +62,14 @@ zadání lehkých úloh podle objemu probrané látky.**
 25. Textové editory
 26. Tabulkové kalkulátory
 27. Trollení
+
+## Lehké úlohy
+
+### Hardware
+
+1. Sečtěte/odečtěte dvě čísla v dvojkové/osmičkové/šestnáctkové soustavě.
+   Postup vysvětlete.
+2. Převeďte číslo z dvojkové/osmičkové/šestnáctkové soustavy do soustavy
+   desítkové. Postup vysvětlete.
+3. Převeďte číslo z desítkové soustavy do soustavy
+   dvojkové/osmičkové/šestnáctkové. Postup vysvětlete.
