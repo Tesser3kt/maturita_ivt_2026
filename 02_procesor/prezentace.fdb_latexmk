@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726738338 "prezentace.tex" "prezentace.pdf" "prezentace" 1726738349 0
+["pdflatex"] 1726821067 "prezentace.tex" "prezentace.pdf" "prezentace" 1726821071 0
   "/etc/texmf/web2c/texmf.cnf" 1685441629 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -222,11 +222,11 @@
   "fde.png" 1726576643 73058 567d54768af454fb7df50c71ce39465e ""
   "gates.jpg" 1726585186 99328 23392a3421ccf6f7be566ccc7497072b ""
   "nand.png" 1726674756 4577 1b4fbd239077004805bf7a69a0e41ee4 ""
-  "prezentace.aux" 1726738348 7153 8f52ff9c8f1a59240fa10526efbafcf4 "pdflatex"
-  "prezentace.nav" 1726738348 3992 a03a77be52e857b8dac4c5c87d407fed "pdflatex"
-  "prezentace.out" 1726738348 611 88cfa5dac32772088603c417576bec8e "pdflatex"
-  "prezentace.tex" 1726738337 14149 4e6408d16ffb4cefca8551b925857b22 ""
-  "prezentace.toc" 1726738348 318 0abaf1fd011b2b294bb47218c599a59d "pdflatex"
+  "prezentace.aux" 1726821070 7153 8f52ff9c8f1a59240fa10526efbafcf4 "pdflatex"
+  "prezentace.nav" 1726821070 3992 a03a77be52e857b8dac4c5c87d407fed "pdflatex"
+  "prezentace.out" 1726821070 611 88cfa5dac32772088603c417576bec8e "pdflatex"
+  "prezentace.tex" 1726821066 14250 0f9134c870cfa132bef370117cc5b19a ""
+  "prezentace.toc" 1726821070 318 0abaf1fd011b2b294bb47218c599a59d "pdflatex"
   "xor.png" 1726675599 7089 a9042b9684d767beb8cd067d9ce49b00 ""
   (generated)
   "prezentace.aux"
