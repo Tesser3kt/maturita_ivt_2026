@@ -24,7 +24,25 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Základní aritmetické operace v číselných soustavách.
     - Převod desítková <--> dvojková/osmičková/šestnáctková.
     - *Něco jsem zapomněl/přidal navíc/špatně napsal? Opravte to.*
-2. Hardware – základní deska, CPU, vnitřní paměti, grafická karta
+
+2. Hardware – základní deska, CPU, vnitřní paměti
+    - FDE (fetch decode execute) cyklus
+    - Co je to registr?, CIR (current instrucions register), PC (program counter)
+    - Pamětové instrukce:
+        - Allocate
+        - Store
+        - Load
+    - Řídící instrukce:
+        - jump
+        - jump-if
+    - Počítací instrukce:
+        - add
+        - compare
+    - Co je to logická brána. Poznat brány "or", "and", "not".
+    - Volatilní vs. nevolatilní paměť.
+    - Rozdíl mezi "SRAM" a "DRAM", poznat další typy paměti ("NVRAM","ROM")
+    - K čemu je motherboard.
+
 3. Externí paměť (HDD, SSD, ...), záznam dat
 4. I/O zařízení
 5. Tiskárny
