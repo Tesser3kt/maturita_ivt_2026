@@ -24,25 +24,28 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Základní aritmetické operace v číselných soustavách.
     - Převod desítková <--> dvojková/osmičková/šestnáctková.
     - *Něco jsem zapomněl/přidal navíc/špatně napsal? Opravte to.*
-
 2. Hardware – základní deska, CPU, vnitřní paměti
-    - FDE (fetch decode execute) cyklus
-    - Co je to registr?, CIR (current instrucions register), PC (program counter)
-    - Pamětové instrukce:
-        - Allocate
-        - Store
-        - Load
-    - Řídící instrukce:
-        - jump
-        - jump-if
-    - Počítací instrukce:
-        - add
-        - compare
-    - Co je to logická brána. Poznat brány "or", "and", "not".
-    - Volatilní vs. nevolatilní paměť.
-    - Rozdíl mezi "SRAM" a "DRAM", poznat další typy paměti ("NVRAM","ROM")
-    - K čemu je motherboard.
-
+    - CPU 
+      - FDE (Fetch, Decode, Execute) cyklus
+      - Co je registr. **CIR** (Current Instructions Register), **PC** (Program Counter)
+      - Pamětové instrukce:
+          - ALLOCATE
+          - STORE
+          - LOAD
+      - Řídící instrukce:
+          - JUMP
+          - JUMP-IF
+      - Počítací instrukce:
+          - ADD
+          - COMPARE
+      - Co je logická brána. Poznat (a umět vysvětlit fyzikální princip) brán **OR**, **AND**, **NOT** a **NAND**.
+    - Vnitřní paměť
+      - Volatilní vs. nevolatilní paměť
+      - Rozdíl mezi **SRAM** a **DRAM**, znát některé typy nevlatilních pamětí (**NVRAM**, **ROM**).
+      - Použití volatilních a nevolatilních pamětí
+    - Základní deska
+      - Co je a k čemu je.
+      - Popis důležitých částí
 3. Externí paměť (HDD, SSD, ...), záznam dat
 4. I/O zařízení
 5. Tiskárny
@@ -93,3 +96,7 @@ zadání lehkých úloh podle objemu probrané látky.**
    desítkové. Postup vysvětlete.
 3. Převeďte číslo z desítkové soustavy do soustavy
    dvojkové/osmičkové/šestnáctkové. Postup vysvětlete.
+4. Zapojte základní komponenty PC (PC a RAM) do základní desky a spusťte jej.
+5. Ze zadané logické formule sestrojte logický obvod.
+6. Napište logickou formuli odpovídající zadanému logickému obvodu.
+7. Určete výstupy logického obvodu pro zadaný vstup.
