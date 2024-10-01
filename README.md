@@ -96,7 +96,7 @@ zadání lehkých úloh podle objemu probrané látky.**
    desítkové. Postup vysvětlete.
 3. Převeďte číslo z desítkové soustavy do soustavy
    dvojkové/osmičkové/šestnáctkové. Postup vysvětlete.
-4. Zapojte základní komponenty PC (PC a RAM) do základní desky a spusťte jej.
+4. Zapojte základní komponenty PC (CPU a RAM) do základní desky a spusťte jej.
 5. Ze zadané logické formule sestrojte logický obvod.
 6. Napište logickou formuli odpovídající zadanému logickému obvodu.
 7. Určete výstupy logického obvodu pro zadaný vstup.
