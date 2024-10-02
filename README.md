@@ -39,6 +39,7 @@ zadání lehkých úloh podle objemu probrané látky.**
           - ADD
           - COMPARE
       - Co je logická brána. Poznat (a umět vysvětlit fyzikální princip) brán **OR**, **AND**, **NOT** a **NAND**.
+      - Znát princip funkce základních logických obvodů (paměť a sčítač) -- odkaz [zde](https://circuitverse.org/users/259770/projects/basic-circuits-1a38e0ec-9ab0-475b-8abc-fa5c2e89c707).
     - Vnitřní paměť
       - Volatilní vs. nevolatilní paměť
       - Rozdíl mezi **SRAM** a **DRAM**, znát některé typy nevlatilních pamětí (**NVRAM**, **ROM**).
