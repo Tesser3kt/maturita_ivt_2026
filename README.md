@@ -47,7 +47,23 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Základní deska
       - Co je a k čemu je.
       - Popis důležitých částí
-3. Externí paměť (HDD, SSD, ...), záznam dat
+3. Externí paměť (HDD, SSD, CD, DVD, kazety, diskety), záznam dat
+    - Magnetické paměti:
+        - Kazety 
+        - Diskety
+        - HDD
+    - Optické paměti:
+        - CD
+        - DVD
+        - Blu-ray
+    - Flash paměti:
+        - Co je flash paměť
+        - SSD
+        - USB Flashka
+            - Sushiusb
+        - SD karty
+
+    U všeho je napsané jak to funguje a jak probíhá záznam dat. Pokud se tam něco nedočtete, tak to bylo řečeno na hodině. 
 4. I/O zařízení
 5. Tiskárny
 6. Technologie displejů
