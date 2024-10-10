@@ -51,6 +51,12 @@ zadání lehkých úloh podle objemu probrané látky.**
 4. I/O zařízení
 5. Tiskárny
 6. Technologie displejů
+     - HistHistorie (CRT)
+     - LCD + technologie (VA, TN, IPS)
+     - OLED
+     - E-Ink
+     - Projektory - LCD, DLP
+     - Důleẓ̌itê specifikace displejŭ
 
 ### Historie
 7. Historie počítačů
