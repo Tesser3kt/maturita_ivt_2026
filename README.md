@@ -62,6 +62,7 @@ zadání lehkých úloh podle objemu probrané látky.**
         - USB Flash
             - Sushiusb
         - SD karty
+
     U každého typu paměti znát princip funkce a průběh záznamu dat.
 4. I/O zařízení
 5. Tiskárny
@@ -72,6 +73,7 @@ zadání lehkých úloh podle objemu probrané látky.**
      - E-Ink
      - Projektory - LCD, DLP
      - Důležité specifikace displejů
+
    Rozumět principu funkce každé displejové i projektorové technologie.
 ### Historie
 7. Historie počítačů
