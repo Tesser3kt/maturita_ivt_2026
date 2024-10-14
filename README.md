@@ -57,23 +57,22 @@ zadání lehkých úloh podle objemu probrané látky.**
         - DVD
         - Blu-ray
     - Flash paměti:
-        - Co je flash paměť
+        - Co je flash paměť.
         - SSD
-        - USB Flashka
+        - USB Flash
             - Sushiusb
         - SD karty
-
-    U všeho je napsané jak to funguje a jak probíhá záznam dat. Pokud se tam něco nedočtete, tak to bylo řečeno na hodině. 
+    U každého typu paměti znát princip funkce a průběh záznamu dat.
 4. I/O zařízení
 5. Tiskárny
 6. Technologie displejů
-     - HistHistorie (CRT)
+     - Historie (CRT)
      - LCD + technologie (VA, TN, IPS)
      - OLED
      - E-Ink
      - Projektory - LCD, DLP
-     - Důleẓ̌itê specifikace displejŭ
-
+     - Důležité specifikace displejů
+   Rozumět principu funkce každé displejové i projektorové technologie.
 ### Historie
 7. Historie počítačů
 8. Von Neumannova architektura
