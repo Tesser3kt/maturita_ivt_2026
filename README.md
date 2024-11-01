@@ -66,25 +66,31 @@ zadání lehkých úloh podle objemu probrané látky.**
     U každého typu paměti znát princip funkce a průběh záznamu dat.
 4. I/O zařízení
 5. Tiskárny
-   -tisknou
-   -inkoustové
-   -laser
-   -proč CMYK?????????????????????????????????????????????????????????
-   -3D tisk
-    -FDM
-   * SLA
-11. Technologie displejů
-     - Historie (CRT)
-     - LCD + technologie (VA, TN, IPS)
-     - OLED
-     - E-Ink
-     - Projektory - LCD, DLP
-     - Důležité specifikace displejů
+    - tisknou
+    - inkoustové
+    - laser
+    - proč CMYK?????????????????????????????????????????????????????????
+    - 3D tisk
+    - FDM
+    - SLA
+6. Technologie displejů
+    - Historie (CRT)
+    - LCD + technologie (VA, TN, IPS)
+    - OLED
+    - E-Ink
+    - Projektory -- LCD, DLP
+    - Důležité specifikace displejů
 
    Rozumět principu funkce každé displejové i projektorové technologie.
 ### Historie
 7. Historie počítačů
 8. Von Neumannova architektura
+    - Co to je konečný automat (finite-state machine) a datová cesta (datapath). Jakým účelům slouží.
+    - von Neumannův model
+        - základní komponenty (CPU, hlavní paměť, I/O), jejich účel a funkce
+        - zápis počítačového programu jako posloupnosti instrukcí v hlavní paměti
+        - anatomie von Neumannova počítače
+    - kódování CPU instrukcí (princip instrukčních sad)
 
 ### Práce s daty
 9. Operační systémy
