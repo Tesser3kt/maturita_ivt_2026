@@ -48,15 +48,18 @@ Gynekologická Evaluace Velkých Obrazů \\ % Your institution for the title pag
 %----------------------------------------------------------------------------------------
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
+\section{Tuříngus}
+\label{sec:turingus}
+
 
 \begin{frame}
 	\frametitle{Komp}
-Abychom se mohli bavit o tom co je počítač musíme si ho definovat.
+Abychom se mohli bavit o tom, co je počítač, musíme si ho definovat.
   \begin{block}{Definice počítače}
 	 Provádí výpočty na určitých datech. Historicky nemusel být programovatelný,
 	 ale teď již je tak často definovaný.
 	\end{block}
-	Podstata počítačů je aby lidem pomáhali se složitými výpočty. Tuto premisu
+	Podstata počítačů je aby lidem pomáhali se složitými výpočty. Tento účel
 	plnili v minulosti například logaritmické tabulky, ovšem ty bychom z dnešního
 	pohledu za počítače považovat nemohli.
 \end{frame}
@@ -72,11 +75,54 @@ Abychom se mohli bavit o tom co je počítač musíme si ho definovat.
 \raggedright
 
  Turingův stroj je teoretický model s nekonečnou pamětí a jednoduchou hlavou,
- která buď čte, píše nebo se hýbe. To vše podle instrukcí které má.
+ která buď čte, píše nebo se hýbe. To vše podle přechodové funkce.
 
- Podle tohoto stroje budeme posuzovat fyzické modely počítačů.
+ Podle tohoto modelu budeme hodnotit ostatní počítače.
 \end{frame}
 
+\begin{frame}
+ \frametitle{Přechodová funkce}
+ Slouží na rozhodnutí další akce Turignova stroje.
+
+ Tato funkce má na vstupu:
+ \begin{itemize}
+  \item Aktuální stav stroje
+  \item Hodnotu buňky na kterou ukazuje hlava
+ \end{itemize}
+ Podle předem naprogramovaných kritérií se poté rozhodne co dělat dál. Jeden z
+ možných výstupů je změna stavu (nic tedy neděláme s hlavou jako takovou a
+ spustíme tu samou funkci jen s jiným stavem na té stejné buňce).
+
+ Můžeme zde vidět spojitost s Von Neumanovou architekturou a ta není vůbec
+ náhodná. Dokonce se konečný automat objevuje jako součást obrázku na minulém
+ slidu.
+\end{frame}
+\begin{frame}
+\frametitle{Byl Turing Turingovsky kompletní?}
+Když už je řeč o Turignáčích, musíme si také uvést pojem Turingovsky kompletní.
+\begin{block}{Turignovsky úplný}
+nazveme instrukční sadu jestliže je schopna simulovat každou další Turingovsky
+úplnou sadu. Někdy se také definuje jako schopnost instrukční sady simulovat
+Turingův stroj. 
+\end{block}
+Abychom si tento termín předvedli uveďme si pár příkladů a protipříkladů.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Příklady}
+ Začněme něčím co je triviálně Turingovsky kompletní: \textbf{python}. Jestliže chceme
+ v pythonu simulovat Turingův stroj stačí nám pro to pár proměnných a poté
+ přechodová funkce, kterou můžeme v pythonu napsat.
+
+ Pozorného diváka by napadlo: vždyť python přeci nemůže mít nekonečnou paměť. A
+ ano nemá; toto kritérium zpravidla vynecháváme.
+
+ \vfill
+ Teď opak. Každému asi došlo, že \textbf{logaritmické tabulky} nejsou turingovsky
+ kompletní. Jestliže je budeme chtít převést na doslova jakýkoliv jiný program
+ než ten co počítá logaritmy tak se nám to nepovede.
+ 
+\end{frame}
 \section{Předchůdci počítačů}
 \label{sec:fde-cycle}
 
@@ -84,8 +130,7 @@ Abychom se mohli bavit o tom co je počítač musíme si ho definovat.
  \frametitle{Analogové a číslicové}
  \begin{block}{Analogové}
   Vstup berou veskrze spojitě a fungují na základě mechanických principů. Nejsou
-  programovatelné a dají se tedy použít jen na velmi specifické a jednoduché
-  úkoly.
+  programovatelné a dají se tedy použít jen na velmi specifické úkoly.
  \end{block}
 
  \begin{block}{Číslicové}
@@ -98,25 +143,15 @@ Abychom se mohli bavit o tom co je počítač musíme si ho definovat.
 Historicky první byly ty analogové.
  \end{frame}
 
-\begin{frame}
-\frametitle{Byl Turing Turingovsky kompletní?}
-Abychom mohli nějak klasifikovat programovatelnost počítače používáme takzvaný
-Turingův test.
-\begin{block}{Turignovsky úplný}
-nazveme instrukční sadu jestliže je schopna simulovat každou další Turingovsky
-úplnou sadu. Někdy se také definuje jako schopnost instrukční sady simulovat
-Turingův stroj. 
-\end{block}
-Prvním návrh na Turingovsky kompletní počítač měl Ch. Babbage v roce 1833. Tento
-projekt nikdy nedošel zdárného konce.
-\end{frame}
+
 
 \section{Ve válce múzy mlčí}
 \begin{frame}
  \frametitle{Ale vědci ne, get fucked kalkulačky jsou tady!!}
 Cílem vývoje za druhé světové války bylo získat díky větší výpočetní síle
 převahu. Němci i Američani měli vlastní prototypy, které byli velmi složité ale
-již Turingovsky kompletní a občas i použitelné.
+již Turingovsky kompletní a občas i použitelné.\footnote{První kdo měl
+teoretický model Turingovsky kompletního počítače byl Ch. Babbage v roce 1833}
 \vfill
 Input se stále musel zadávat ručně a jejich programování fungovalo přes děrné
 štítky. Rychlost výpočetních instrukcí byla horší než jedna za sekundu.
