@@ -96,6 +96,17 @@ zadání lehkých úloh podle objemu probrané látky.**
 9. Operační systémy
 10. Souborové systémy
 11. Komprese
+    - Co to je komprese. Co komprimujeme a proč.
+    - Ztrátová a bezztrátová komprese, princip a rozdíly (např. algoritmus vs. nedokonalost zraku).
+    - Bezztrátová:
+        - Run-length komprese a strom priorit.
+        - Způsob reprezentace obrázku, zvuku a videa na počítači.
+        - Aspoň jeden bezztrátový formát obrázku a zvuku. Co bezztrátové video?
+    - Ztrátová:
+        - Obecný princip.
+        - Příklady ztrátové komprese obrázku a zvuku.
+        - Ztrátová komprese videa (prostorová vs. časová), rozdíl mezi data containerem a kodekem.
+        - Aspoň jeden ztrátový formát obrázku a zvuku a jeden ztrátový kodek videa.
 
 ### Počítačové sítě, internet
 12. Topologie počítačových sítí, typy počítačových sítí
