@@ -26,10 +26,9 @@
     {\usebeamercolor[fg]{titlegraphic}\insertlogo\par}
 
 }
-
 % Footline
 \setbeamertemplate{footline}{%
-  \begin{beamercolorbox}[ht=3em,sep=0.75em,wd=\paperwidth,leftskip=0.5cm,rightskip=0.5cm]{footlinecolor}
+  \begin{beamercolorbox}[ht=5em,sep=0.75em,wd=\paperwidth,leftskip=0.5cm,rightskip=0.5cm]{footlinecolor}
     \scriptsize{\insertshortinstitute}
     \hspace{1cm}
     \hfill
@@ -72,7 +71,7 @@
         % Logo on the end page
        \titlegraphic{
         \begin{tikzpicture}[overlay,remember picture]
-        \node[anchor=north west, outer xsep=26pt, outer ysep=20pt] at (current page.north west){
+        \node[anchor=north east, outer xsep=26pt, outer ysep=0pt] at (current page.north east){
             \includegraphics[width=12em]{AICStyleData/logos/Logo_AIC_FEECTU_Holo_white.png}
         };
         \end{tikzpicture}

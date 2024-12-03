@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{makecell}
 \usepackage{wrapfig}
+\usepackage[czech]{babel}
 % ADD YOUR PACKAGES BELOW
 
 %----------------------------------------------------------------------------------------
@@ -21,180 +22,170 @@
 \subtitle{Maturitní seminář z IVT}
 
 \author[Dusart]{Eric Dusart}
-\institute[GEVO]{Gymnázium Evolution jižní}
-% Your institution as it will appear on the bottom of every slide, maybe shorthand to save space
-
-
-\date{\today} % Date, can be changed to a custom date
-%----------------------------------------------------------------------------------------
-%	PRESENTATION SLIDES
-%----------------------------------------------------------------------------------------
-
+\institute[GEVO]{Gymnázium Evolution Jižní Město}
+\date{\today}
 \begin{document}
 
 \maketitlepage
+{
+\setbeamertemplate{background} 
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
 
-\begin{frame}[t]{Overview}
-    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\begin{frame}[t]{Obsah}
     \tableofcontents
 \end{frame}
-
+}
 %------------------------------------------------
 % Section divider frame
-\makesection{Basic blocks}
+\section{Hlavní info}
 
-%------------------------------------------------
-% Bullets
-\begin{frame}{Bullet Points}
-    \begin{itemize}
-        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-        \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-        \item Nam cursus est eget velit posuere pellentesque
-        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-        \item Nam cursus est eget velit posuere pellentesque
-        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-    \end{itemize}
+{
+\setbeamertemplate{background} 
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\begin{frame}{Hlavní informace.}
+    \textbf{\large K čemu to je? Proč to potřebujeme? \dots ?}
+        \begin{itemize}
+            \item Spravuje organizaci souborů.
+            \item Hiearchie všech složek a souborů.
+            \item Unifikuje přístup k datům všem aplikacím / procesům.
+            \begin{itemize}
+                \item Jinak by aplikace nekompatibilně využívaly data $\rightarrow$ korupce dat.
+            \end{itemize}
+            \item Existuje mnoho typů vytvořených pro různé typy externích pamětí.
+            \item Virtuální - \emph{tmpfs}
+            \item 
+        \end{itemize}
 \end{frame}
-
-%------------------------------------------------
-% Lists
-\begin{frame}{Numbered List}
-    \begin{enumerate}
-        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-        \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-        \item Nam cursus est eget velit posuere pellentesque
-        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-        \item Nam cursus est eget velit posuere pellentesque
-        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-    \end{enumerate}
-\end{frame}
-
-%------------------------------------------------
-% Highlight boxes
-\begin{frame}{Blocks of Highlighted Text}
-    In this slide, some important text will be \alert{highlighted} because it's important. Please, don't abuse it.
-
-    \begin{block}{Block}
-        Sample text
-    \end{block}
-
-    \begin{alertblock}{Alertblock}
-        Sample text in red box
-    \end{alertblock}
-
-    \begin{examples}
-        Sample text in green box. The title of the block is ``Examples".
-    \end{examples}
-\end{frame}
-
-%------------------------------------------------
-% Double columns
-\begin{frame}{Multiple Columns}
+}
+{
+\setbeamertemplate{background} 
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\section{Typy Filesystémů}
+\begin{frame}{Typy Filesystémů}
     \begin{columns}
     \begin{column}{0.45\textwidth}
-      \colheader{Heading}
-        \begin{enumerate}
-            \item Statement
-            \item Explanation
-            \item Example
-        \end{enumerate}
+      \colheader{EXT4}
+        \begin{itemize}
+            \item 
+        \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}  %%<--- here
-        \colheader{Heading}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+        \colheader{NTFS}
+        \begin{itemize}
+            \item 
+        \end{itemize}
     \end{column}
     \end{columns}
 \end{frame}
-%------------------------------------------------
-% Table
-\begin{frame}{Table}
-    \begin{table}
-        \begin{tabular}{l l l}
-            \toprule
-            \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
-            \midrule
-            Treatment 1         & 0.0003262           & 0.562               \\
-            Treatment 2         & 0.0015681           & 0.910               \\
-            Treatment 3         & 0.0009271           & 0.296               \\
-            \bottomrule
-        \end{tabular}
-        \caption{Table caption}
-    \end{table}
+\begin{frame}{Typy Filesystémů}
+    \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{BTRFS}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{APF / HFS}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
-%------------------------------------------------
-% Section divider frame
-\makesection{Theorems and Figures}
-
-%------------------------------------------------
-% Theoerm (in highlighted box) and Equation in text
-\begin{frame}{Theorem}
-    \begin{theorem}[Mass--energy equivalence]
-        $E = mc^2$
-    \end{theorem}
-    Equation in text
-    \begin{equation}
-        c^{2} = a^{2} + b^{2}
-    \end{equation}
+\begin{frame}{Typy File systémů}
+    \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{FAT-32}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{exFAT}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
-
-%------------------------------------------------
-% Figure without wrapped text
-\begin{frame}{Figure}
-    \begin{figure}
-    \includegraphics[height=0.5\paperheight]{figures/results_fig.pdf}
-    \caption{Figure caption}
-    \end{figure}
+\begin{frame}{Typy File systémů}
+    \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{ZFS}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{tmpfs}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
-
-%------------------------------------------------
-% Figure with wrapped text
-\begin{frame}{Wrapped Figure}
-    \begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{figures/results_fig.pdf}
-    \caption{Figure caption}
-\end{wrapfigure}
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+}
+{
+\setbeamertemplate{background} 
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\section{Fungování file systémů}
+\begin{frame}{Fungování file systémů - Architektura}
+Fungování file systému lze rozdělit do tří \uv{vrstev}:
+\begin{itemize}
+    \item \uv{Logická} vrstva.
+    \begin{itemize}
+        \item Poskytuje přístup k souborům, operace se soubory (open, read, write, \dots).
+        \item Dává instrukce nižším vrstvám.
+    \end{itemize}
+    \item Virtuální vrstva (optional).
+    \item Fyzická vrstva - low level přístup k externí paměti. Například psaní bloků do harddisku. Používá drivery zařízení (paměti).
+\end{itemize}
 \end{frame}
-%------------------------------------------------
-% Section divider frame
-\makesection{Citations and References}
-
-%------------------------------------------------
-% Citations
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-    \frametitle{Citation}
-    An example of the \verb|\cite| command to cite within the presentation:\\~
-
-    This statement requires citation \cite{p1}.
+}
+{
+\setbeamertemplate{background} 
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\section{Organizace dat na disku}
+\begin{frame}{Organizace dat na disku}
+\begin{itemize}
+    \item Pevný disk bývá rozdělen na oddíly (partitions).
+    \item Každý partition má alespoň jeden file system. 
+\end{itemize}
+Informace ve file systému se dělí na:
+\begin{itemize}
+    \item Metadata
+    \begin{itemize}
+        \item Data, která poskytují informace o jiných datech.
+        \item Například velikost souboru, datum vytvoření, atd\dots
+        \item Různé typy file systémů mají různý počet metadat.
+    \end{itemize}
+    \item Data
+    \begin{itemize}
+        \item Obsah souboru, který chceme přečíst.
+    \end{itemize}
+\end{itemize}
+    
 \end{frame}
+}
 
-%------------------------------------------------
-% Refenrenced
-\begin{frame}{References}
-    % Beamer does not support BibTeX so references must be inserted manually as below
-    \footnotesize{
-        \begin{thebibliography}{99}
-            \bibitem[Smith, 2012]{p1} John Smith (2012)
-            \newblock Title of the publication
-            \newblock \emph{Journal Name} 12(3), 45 -- 678.
 
-            \bibitem[Doe, 2012]{p1} Joe Doe (2012)
-            \newblock Title of the publication
-            \newblock \emph{Journal Name} 12(3), 45 -- 678.
-            \bibitem[Doe, 2013]{p} Jane Doe (2012)
-            \newblock Title of the publication
-            \newblock \emph{Journal Name} 12(3), 45 -- 678.
-        \end{thebibliography}
-    }
-\end{frame}
 
-%----------------------------------------------------------------------------------------
-% Final PAGE
-% Set the text that is showed on the final slide
-\finalpagetext{Thank you for your attention}
+
+
+
+
+\finalpagetext{Děkuji za pozornost}
 %----------------------------------------------------------------------------------------
 \makefinalpage
 %----------------------------------------------------------------------------------------
