@@ -1,6 +1,3 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND THEMES
-%----------------------------------------------------------------------------------------
 \documentclass[aspectratio=169,xcolor=dvipsnames, t]{beamer}
 \usepackage{fontspec} % Allows using custom font. MUST be before loading the theme!
 \usetheme{SimplePlusAIC}
@@ -28,7 +25,7 @@
 
 \maketitlepage
 {
-\setbeamertemplate{background} 
+\setbeamertemplate{background}
 {
     \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
 }
@@ -42,98 +39,135 @@
 \section{Hlavní info}
 
 {
-\setbeamertemplate{background} 
+\setbeamertemplate{background}
 {
     \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
 }
-\begin{frame}{Hlavní informace.}
+\begin{frame}{Hlavní informace}
     \textbf{\large K čemu to je? Proč to potřebujeme? \dots ?}
         \begin{itemize}
             \item Spravuje organizaci souborů.
-            \item Hiearchie všech složek a souborů.
+            \item Hierarchie všech složek a souborů.
             \item Unifikuje přístup k datům všem aplikacím / procesům.
             \begin{itemize}
                 \item Jinak by aplikace nekompatibilně využívaly data $\rightarrow$ korupce dat.
             \end{itemize}
             \item Existuje mnoho typů vytvořených pro různé typy externích pamětí.
             \item Virtuální - \emph{tmpfs}
-            \item 
         \end{itemize}
 \end{frame}
 }
 {
-\setbeamertemplate{background} 
+\setbeamertemplate{background}
 {
     \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
 }
-\section{Typy Filesystémů}
-\begin{frame}{Typy Filesystémů}
+\section{Typy file systémů}
+\begin{frame}{Typy file systémů}
+\begin{itemize}
+    \item Transactional file systems.
+    \begin{itemize}
+    \item Journaling file systems (JFS).
+    \item Buď všechny změny provedeny, nebo žádná.
+    \item Logují změny, které se mají provést na disku.
+    \end{itemize}
+    \item Versioning file systems.
+    \begin{itemize}
+    \item Vytvářejí backupy souborů a systému. Umožňují obnovu do předchozích verzí.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}{Typy file systémů}
     \begin{columns}
     \begin{column}{0.45\textwidth}
       \colheader{EXT4}
         \begin{itemize}
-            \item 
+            \item JFS.
+            \item Linux.
+            \item Maximální velikost souboru: 16TB (4KB bloky).
+            \item Maximální velikost file systému: 1EB (64KB bloky).
         \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}  %%<--- here
         \colheader{NTFS}
         \begin{itemize}
-            \item 
+            \item JFS.
+            \item Windows.
+            \item Některé systémy mají omezenou podporu.
         \end{itemize}
     \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}{Typy Filesystémů}
+\begin{frame}{Typy file systémů}
     \begin{columns}
     \begin{column}{0.45\textwidth}
       \colheader{BTRFS}
         \begin{itemize}
-            \item 
+            \item Linux.
+            \item Podporuje snapshoty.
+            \item Poměrně nový (2009).
+            \item Copy-on-write (COW).
         \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}  %%<--- here
-        \colheader{APF / HFS}
+        \colheader{HFS / APFS}
         \begin{itemize}
-            \item 
+            \item JFS.
+            \item Apple.
+            \item HFS (1985), APFS (2017).
+            \item APFS optimalizovaný pro SSD.
+            \item APFS Podporuje snapshoty.
         \end{itemize}
     \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}{Typy File systémů}
+\begin{frame}{Typy file systémů}
     \begin{columns}
     \begin{column}{0.45\textwidth}
       \colheader{FAT-32}
         \begin{itemize}
-            \item 
+            \item File Allocation Table.
+            \item Velmi jednoduchý, podporovaný skoro všude.
+            \item Maximální velikost souboru: 4GB.
+
         \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}  %%<--- here
         \colheader{exFAT}
         \begin{itemize}
-            \item 
+            \item Extended File Allocation Table.
+            \item Soubory až asi 16 EiB.
+            \item Microsoft si ho patentoval, tím se jeho omezilo jeho využití.
+            \item Používá se v SDXC kartách nebo flashkách.
+            \item Datum a čas: (1980 - 2107).
+            \item Nepodporuje kompresi ani šifrování.
         \end{itemize}
     \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}{Typy File systémů}
+\begin{frame}{Typy file systémů}
     \begin{columns}
     \begin{column}{0.45\textwidth}
       \colheader{ZFS}
         \begin{itemize}
-            \item 
+            \item Zettabyte File System.
+            \item Maximální velikost file systému okolo 256 trilliónů yobibytů.
         \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}  %%<--- here
         \colheader{tmpfs}
         \begin{itemize}
-            \item 
+            \item Data jsou uloženy v RAM.
+            \item Velmi rychlý.
+            \item Data jsou ztracena po restartu.
+            \item /tmp
         \end{itemize}
     \end{column}
     \end{columns}
 \end{frame}
 }
 {
-\setbeamertemplate{background} 
+\setbeamertemplate{background}
 {
     \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
 }
@@ -152,7 +186,7 @@ Fungování file systému lze rozdělit do tří \uv{vrstev}:
 \end{frame}
 }
 {
-\setbeamertemplate{background} 
+\setbeamertemplate{background}
 {
     \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
 }
@@ -160,7 +194,7 @@ Fungování file systému lze rozdělit do tří \uv{vrstev}:
 \begin{frame}{Organizace dat na disku}
 \begin{itemize}
     \item Pevný disk bývá rozdělen na oddíly (partitions).
-    \item Každý partition má alespoň jeden file system. 
+    \item Každý partition má alespoň jeden file system.
 \end{itemize}
 Informace ve file systému se dělí na:
 \begin{itemize}
@@ -175,11 +209,27 @@ Informace ve file systému se dělí na:
         \item Obsah souboru, který chceme přečíst.
     \end{itemize}
 \end{itemize}
-    
+
 \end{frame}
 }
 
+{
+\setbeamertemplate{background}
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\section{Fragmentace a defragmentace}
+\begin{frame}{Fragmentace a defragmentace}
+\textbf{\large Co to je?}
+\begin{itemize}
+\item Stává se, když soubory nejsou uloženy v paměti po sobě.
+\item Zpomaluje přístup k souborům.
+\item Defragmentace - proces, kdy se soubory přesouvají tak, aby byly uloženy po sobě.
+\item Gif: \href{https://upload.wikimedia.org/wikipedia/commons/d/d0/FragmentationDefragmentation.gif}{\textcolor{orange}{Defragmentace}} 
+\end{itemize}
 
+\end{frame}
+}
 
 
 
