@@ -1,0 +1,329 @@
+\documentclass{beamer}
+
+
+\usetheme{Madrid}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[czech]{babel}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[počítačových lol]{Topologie sítí} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Jáchym Löwenhöffer} % Your name
+\institute[GEVO] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Gravitaci Emulující Vágní Opar \\ % Your institution for the title page
+\medskip
+\textit{jachym.lowenhoffer@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\graphicspath{{./pics/}}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+	\frametitle{Přehled} % Table of contents slide, comment this block out to remove it
+	\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+\begin{frame}{Co je to sakra síť?}
+ Když už máme jeden funkční počítač tak, by mu ale samotnému bylo smutno. Proto
+ si se svými kamarády chce povídat. Povídá si s nimi přes fyzický kabel, nebo online -
+ fyzická, logická síť.
+
+ Aby si počítače rozuměli tak potřebují nějaký jazyk - o tom bude mluvit maják.
+ Většinou jsou specifické pro určité topologie. My budeme uvažovat jen že si
+ posílají balíčky informací - packety.
+\vfill
+
+Důležité je u sítí předpokládat, že co se pokazit může, tak to se pokazí. I věci
+které bereme implicitně jako bezchybné, se v praxi rozbíjejí a způsobují výpadky.
+Jestliže si je nemůžeme dovolit tak musíme zavést nadbytečné součástky, které zaskočí ve
+chvíli kdy se něco pokazí.
+
+ 
+\end{frame}
+
+
+\section{Metriky}
+\label{sec:metriky}
+
+\begin{frame}{Co je dobrá síť?}
+	Taková, že z ní chycená ryba nevyskočí a zároveň skrz ní dokáže protéct voda
+	čímž šetří palivo ryboloveckých lodí.
+	\vfill
+	\centering
+	\Large
+	Taková, které splňuje naše požadavky.
+
+	\normalsize
+	\raggedright
+	\vfill
+	Každá má své pozitiva a negativa je na nás abychom je balancovali. Jsou určitá
+	kritéria která od sítě můžeme chtít. Ty se odvíjejí od toho jak síť stavíme,
+	jak se o ní staráme nebo jak je bezpečná.
+\end{frame}
+
+\begin{frame}{Kritéria}
+ Na základě těchto kritérií budeme hodnotit jednotlivé typy sítí. Škály jsou
+ samozřejmě relativní.
+
+ \begin{enumerate}
+ 	\item Cena zavedení (počet kabelů a složitost celé topologie)
+ 	\item Spolehlivost (hledání chybných spojení v síti - nadbytečné spoje)
+ 	\item Složitost zvětšování (přidávání nových zařízení do sítě)
+ 	\item Zabezpečení (některé sítě mohou být fundamentálně lepší na zabezpečení
+ 	 než ostatní)
+ \end{enumerate} 
+\end{frame}
+
+
+\section{Jednotlivé topologie}
+\label{sec:jednotlive-topologie}
+
+
+\subsection{Mash}
+\label{sec:mash}
+
+\begin{frame}{Co je \textbf{MASH} topologie?}
+ Mash toplogie znamená, že propojíme každý počítač s hodně ostatními. Jestliže
+ propojíme každý s každým jedná se o \emph{full Mash}. V tom případě máme
+$\binom{N}{2}$ spojení. Počítače, i když sami nic neposílají, tak často musí být
+zapojené aby mohli přeposílat packety které se přes ně posílají.
+
+ \includegraphics[scale=0.2]{mash.png}
+
+\end{frame}
+\begin{frame}{Porovnání}
+
+\begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{\textbf{Výhody}}
+        \begin{itemize}
+            \item Hodně nadbytečných spojů - odolné proti výpadkům.
+            \item Žádný Single Point of Failure (SPF). 
+            \item Málokdy je zahlcená.
+            \item Přidání nového zařízení neomezí ty již v síti.
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{\textbf{Nevýhody}}
+        \begin{itemize}
+            \item Velký počet kabelů stojí hodně peněz.
+            \item Údržba těchto sítí je složitá
+            \item Přidání jednoho stroje je pro ten stroj jako takový drahé a
+             pomalé.
+            \item Počítače běží více než by museli
+        \end{itemize}
+    \end{column}
+    \end{columns}
+    \vspace{10pt}
+
+\textbf{Využití:} Používá se když si nemůžeme dovolit výpadky i za větší
+cenu: nemocnice, letadla, vojenství atd. I když nebudeme mít full mash tak cena
+s počtem roste rychle proto jich musíme mít co nejméně.
+ 
+\end{frame}
+
+
+\subsection{Ring}
+\label{sec:ring}
+
+\begin{frame}{Co je \textbf{RING} topologie?}
+ Topologie prstenu spojuje zařízení jak byste čekali. Síť je spojená tak, že
+ tvoří jednu velkou kružnici a data v ní cestují jedním nebo oběma směry. Protože
+ data pořád krouží po síti, musí být všechny potítače zapnuté aby síť fungovala.
+
+ \includegraphics[scale=0.25]{ring.jpg}
+ 
+\end{frame}
+
+\begin{frame}{Porovnání}
+
+\begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{\textbf{Výhody}}
+        \begin{itemize}
+            \item Minimalizovaná packet kolize díky jasným směrům.
+            \item Díky malému počtu spojení je levná.
+            \item Nepotřebuje žádný server který by to řídil.
+            \item Pro jednotlivce je jednoduché se připojit
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{\textbf{Nevýhody}}
+        \begin{itemize}
+            \item Při přidávání nového zařízení celá síť vypadne
+            \item Všechny počítače musí být neustále zapnuté aby síť fungovala.
+            \item Každý stroj je SPF.
+            \item Můj packet i když šifrovaný si mohou přečíst všichni v síti.
+        \end{itemize}
+    \end{column}
+    \end{columns}
+    \vspace{10pt}
+
+\textbf{Využití:} v industriálních systémech které kontrolují chod celé fabriky.
+Dále v malých lokálních sítích, které volí nižší cenu na úkor 100\% spolehlivosti.
+
+\end{frame}
+
+\subsection{Bus}
+\label{sec:bus}
+\begin{frame}{Co je \textbf{BUS} topologie?}
+ Sběrnicová topologie funguje na principu jedné sběrnice (bus-line) do které
+ jsou všechny přístroje zapojené. Po této lince se spolu všechny zařízení baví.
+
+ \includegraphics[scale=0.9]{bus.png}
+\end{frame}
+
+\begin{frame}{Porovnání}
+
+\begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{\textbf{Výhody}}
+        \begin{itemize}
+            \item Pro malé sítě se jedná o velmi levnou a jednoduchou
+             alternativu.
+            \item Velmi rychlý přenos dat.
+            \item Jednoduché přidávání nových zařízení za běhu.
+            \item Jednoduše provozovatelná.
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{\textbf{Nevýhody}}
+        \begin{itemize}
+            \item Pro větší počty zařízení se už nevyplatí a také klesá
+             rychlost.
+            \item Bus-line je SPF.
+            \item Kvůli jednomu kabelu a více přístrojům co přes něj můžou
+             posílat je vysoký packet loss.
+        \end{itemize}
+    \end{column}
+    \end{columns}
+    \vspace{10pt}
+
+\textbf{Využití:} hlavně v menších sítích kde jde hlavně o co nejmenší cenu a
+jednoduché zacházení a nevadí větší packet loss. Například sítě ve škole nebo
+doma.
+
+\end{frame}
+
+
+\subsection{Star}
+\label{sec:star}
+\begin{frame}{Co je to \textbf{STAR} topologie?}
+ Hvězdicová topologie funguje tak, že má všechny přístroje napojené na centrální
+ server přes který tedy jdou všechny packety. Tento server je buď aktivní nebo
+ pasivní.
+
+ Aktivní může například ještě šifrovat data nebo na nich sám provádět nějakou
+ akci případně je zapisovat do databáze atd. Ten pasivní nedělá nic a jen je
+ přeposílá tam kam jsou určena.
+
+ \includegraphics[scale=0.25]{star.png}
+\end{frame}
+
+\begin{frame}{Porovnání}
+
+\begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{\textbf{Výhody}}
+        \begin{itemize}
+         \item Pro velké sítě je efektivní.
+         \item Velmi snadné přidávání/odebírání zařízení.
+         \item Jednoduchá detekce chybného spojení a malá kolize packetů.
+
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{\textbf{Nevýhody}}
+        \begin{itemize}
+            \item  Server je SPF. 
+            \item Severy bývají velmi drahé a náročné na provozování.
+            \item Jestliže si chtějí přístroje posílat hlavně věci mezi sebou,
+             server celou akci notně zpomaluje.
+
+        \end{itemize}
+    \end{column}
+    \end{columns}
+    \vspace{10pt}
+
+\textbf{Využití:} například v bankovnictví. Díky centrálnímu hubu je zařízená
+bezpečnost a hlavně je jednoduché přidávat nové bankomaty. 
+\end{frame}
+
+
+\subsection{Tree}
+\label{sec:tree}
+
+\begin{frame}{Co je \textbf{TREE} topologie?}
+    Stromová topologie funguje tak že jeden server je braný jako kořen a ostatní
+    jsou zapojeny jakoby do stromu. To jaký má každý vrchol stupeň se může lišit,
+    ale malý je neefektivní a velký vyústí v časté přetížení.
+
+    \includegraphics[scale=0.4]{tree.png}
+\end{frame}
+
+\begin{frame}{Porovnání}
+
+\begin{columns}
+    \begin{column}{0.45\textwidth}
+      \colheader{\textbf{Výhody}}
+        \begin{itemize}
+         \item Velmi jednoduché na přidávání nových zařízení a velmi modulární.
+         \item Výpadek serveru na nižší hladině neohrozí nic kromě svého
+             podstromu.
+         \item Servery se mohou starat o šifrování.
+
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}  %%<--- here
+        \colheader{\textbf{Nevýhody}}
+        \begin{itemize}
+            \item  Root server je SPF.
+            \item Je zapotřebí hodně serverů a to se prodraží.
+        \end{itemize}
+    \end{column}
+    \end{columns}
+    \vspace{10pt}
+
+\textbf{Využití:} Funguje na tom vlastně celý internet (hierarchie v doménách
+pomocí lomítek). Obecně na velkých sítích kde si většinou povídají jen skupiny u
+sebe.
+
+\end{frame}
+
+\section{Závěr}
+\label{sec:zaver}
+
+\begin{frame}{Co si odnést?}
+ \begin{itemize}
+  \item Sítí je tuna a musíme si vybrat tu co nejlíp sedí na to co chceme
+      (nemůžeme mít všechno).
+  \item Na menší sítě se vyplatí \textbf{bus} nebo \textbf{mash}.
+  \item Na ty větší \textbf{start},\textbf{ring} nebo \textbf{tree}.
+ \end{itemize}
+ 
+\end{frame}
+
+\end{document}
