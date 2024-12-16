@@ -110,6 +110,15 @@ zadání lehkých úloh podle objemu probrané látky.**
 
 ### Počítačové sítě, internet
 12. Topologie počítačových sítí, typy počítačových sítí
+    - Kritéria pro porovnávání sítí:
+        - Cena zavedení,
+        - SLožitost provozování.
+    - Jednotlivé sítě a jejich výhody:
+        - MESH
+        - BUS
+        - STAR
+        - RING
+        - TREE
 13. Schéma TCP/IP, protokoly a IP adresy
 14. Internet – vývoj internetu, architektura, služby
 
