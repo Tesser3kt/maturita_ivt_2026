@@ -111,14 +111,19 @@ zadání lehkých úloh podle objemu probrané látky.**
 ### Počítačové sítě, internet
 12. Topologie počítačových sítí, typy počítačových sítí
     - Kritéria pro porovnávání sítí:
-        - Cena zavedení,
-        - SLožitost provozování.
+        - Cena zavedení (primárně počet kabelů a pravidelná údržba),
+        - Spolehlivost (jak ovlivňují chybná spojení chod celé sítě)
+        - Složitost rozšíření (přidání nových zařízení do sítě)
+        - Zabezpečení (v některých sítích se snáz rozdělují zprávy na více
+        kusů, což zvyšuje bezpečnost)
     - Jednotlivé sítě a jejich výhody:
         - MESH
         - BUS
         - STAR
         - RING
         - TREE
+    - Znát typické oblasti využití každé topologie a schopnost navrhnout
+    topologii sítě na základě daných požadavků.
 13. Schéma TCP/IP, protokoly a IP adresy
 14. Internet – vývoj internetu, architektura, služby
 
