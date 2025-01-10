@@ -65,7 +65,7 @@ zadání lehkých úloh podle objemu probrané látky.**
 
     U každého typu paměti znát princip funkce a průběh záznamu dat.
 4. I/O zařízení
-5. Tiskárny
+5. Tiskárny (Pro spravne zobrazeni prezentace pouzijte Okular nebo Adobe Acrobat)
     - tisknou
     - inkoustové
     - laser
