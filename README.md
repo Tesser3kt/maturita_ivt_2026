@@ -162,3 +162,9 @@ zadání lehkých úloh podle objemu probrané látky.**
 5. Ze zadané logické formule sestrojte logický obvod.
 6. Napište logickou formuli odpovídající zadanému logickému obvodu.
 7. Určete výstupy logického obvodu pro zadaný vstup.
+8. Nakreslete diagram HDD (disk, čtecí hlava, sektory...) a vysvětlete na něm princip funkce zařízení. 
+9. Nakreslete diagram optické myši a vysvětlete na něm princip funkce zařízení.
+10. Nakreslete diagram klávesnice (membránové/mechanické) a vysvětlete na něm princip funkce zařízení.
+11. Nakreslete diagram tiskárny (laserové/inkoustové) a vysvětlete na něm princip funkce zařízení.
+12. Nakreslete diagram LCD panelu a vysvětlete na něm princip funkce zařízení.
+13. Nakreslete diagram DLP projektoru a vysvětlete na něm princip funkce zařízení.
