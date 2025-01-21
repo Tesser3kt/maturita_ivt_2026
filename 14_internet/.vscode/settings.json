@@ -2,7 +2,7 @@
   "latex-workshop.latex.tools": [
     {
       "name": "xelatex",
-      "command": "xelatex",
+      "command": "/usr/local/texlive/2024/bin/x86_64-linux/xelatex",
       "args": [
           "-synctex=1",
           "-interaction=nonstopmode",
@@ -42,6 +42,5 @@
         "name": "lualatex",
         "tools": ["lualatex"]
     }
-],
-"latex-workshop.latex.build.defaultRecipe": "pdflatex ➞ bibtex ➞ pdflatex×2"
+]
 }

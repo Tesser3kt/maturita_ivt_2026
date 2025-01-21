@@ -103,13 +103,66 @@
 }
 \begin{frame}{Volání pomocí internetu (VoIP)}
     \begin{itemize}
-        \item Voice over Internet Protocol
-        \item 
+        \item Voice over Internet Protocol.
+        \item Pro srozumitelné a spolehlivé volání je nutností zajištění kvality služby $\rightarrow$ Qos (quality of service).
+        \begin{itemize}
+            \item Rezervace a řízení toků v  telekomunikačních a počítačových sítích, které používají přepojování paketů.
+            \item Prioritizace procesů.
+        \end{itemize}
+        \item Používají se kodeky k úspoře přenosu objemu dat.
+        \item Například Skype - ma vlastní closed protokol.
+        \item Většinou používají IP protokoly.
     \end{itemize}
 
 \end{frame}
 
+\subsection{Instant messaging}
+\setbeamertemplate{background}
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\begin{frame}{Instant messaging (IM)}
+    \begin{itemize}
+        \item Posílání zpráv přes internet.
+        \item Discord, WhatsApp, Snapchat, Skype, \ldots
+        \item Princip odesílání zpráv v reálném čase.
+        \item První službou byla IRC (1988)
+    \end{itemize}
+\end{frame}
 
+
+\subsection{File Transfer Protocol}
+\setbeamertemplate{background}
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\begin{frame}{File Transfer Protocol}
+    \begin{itemize}
+        \item Protokol na přenášení dat mezi počítači pomocí počítačové sítě.
+        \item Připojování na počítač je pomocí uživatelského jména a hesla v textové podobě. Lze se připojit i anonymně, pokud to má server nastavené. K zabezpečenému přístupu je protokol FTP zabezpečen pomocí SSL/TLS (FTPS) nebo nahrazen protokolem SFTP. 
+        \item Active / passive mode.
+        \item Active:
+        \begin{itemize}
+            \item Klient pošle serveru zprávu PORT M, která říká na kterém portě \uv{poslouchá}. 
+        \end{itemize}
+        \item Passive:
+        \begin{itemize}
+            \item Používá se, když klient má firewall, protože blokuje aktivní připojení serveru k počítači. 
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+\subsection{DNS}
+\setbeamertemplate{background}
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{AICStyleData/logos/mene_polygonu_bg.png}
+}
+\begin{frame}{DNS - Domain Name System}
+    \begin{itemize}
+        \item Hierarchický systém doménových jmen (strom s jedním kořenem).
+        \item Každý uzel obsahuje informace o části jména domény.
+        \item idk
+    \end{itemize}
+\end{frame}
 \finalpagetext{Děkuji za pozornost}
 %----------------------------------------------------------------------------------------
 \makefinalpage
