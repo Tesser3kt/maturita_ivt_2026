@@ -158,9 +158,14 @@
 }
 \begin{frame}{DNS - Domain Name System}
     \begin{itemize}
-        \item Hierarchický systém doménových jmen (strom s jedním kořenem).
+        \item Místo číselných domén - názvy.
+        \item Hierarchický systém doménových jmen (strom s jedním kořenem (tečka)).
         \item Každý uzel obsahuje informace o části jména domény.
-        \item idk
+        \item TLD - top level domain = org, com, cz, \ldots
+        \item Používá UDP - user datagram protocol. Ten má ale hodně limitací (bezpečnost, soukromí, \ldots), proto byly vytvořeny další.
+        \item Bezpečnost a soukromí - data do DNS serveru chodí nezabezpečeně, takže jdou trackovat informace. Proto se používají VPN (virtual private network), Tor nebo proxy servery.
+        \item Organizace, které spravují doménové jména:  Internet Corporation for Assigned Names and Numbers (ICANN) nebo další, jako například OpenNIC.
+        \item Označuje se také někdy, jako WHOIS.
     \end{itemize}
 \end{frame}
 \finalpagetext{Děkuji za pozornost}
