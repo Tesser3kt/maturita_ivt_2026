@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="606.96716"
+   height="235.67728"
+   viewBox="0 0 606.96716 235.67728"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="list.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:zoom="1.0296296"
+     inkscape:cx="222.89568"
+     inkscape:cy="202.98561"
+     inkscape:window-width="1896"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="16.495301,993.38185"
+       orientation="0,-1"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="16.495301,935.36146"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="45.505501,1022.392"
+       orientation="1,0"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="308.8945,1022.392"
+       orientation="1,0"
+       id="guide10"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="440.68278,1022.392"
+       orientation="1,0"
+       id="guide14"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="91.000141,1071.1839"
+       orientation="0,-1"
+       id="guide23"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="572.47106,1054.9124"
+       orientation="1,0"
+       id="guide24"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-309.51627,-255.77772)">
+    <g
+       id="g3">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="313.38568" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="371.40607" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c81414;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="348.91376"
+       y="351.26389"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         x="348.91376"
+         y="351.26389">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#14c814;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="335.53375"
+       y="409.28427"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         x="335.53375"
+         y="409.28427">413</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'TeX Gyre schola';-inkscape-font-specification:'TeX Gyre schola';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="309.06827"
+       y="273.00708"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         x="309.06827"
+         y="273.00708">ZAČÁTEK</tspan></text>
+    <path
+       style="fill:#1414c8;fill-opacity:1;stroke:#1414c8;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 355.02177,278.13058 v 22.31965"
+       id="path5" />
+    <g
+       id="g6"
+       transform="translate(131.60072)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="313.38568" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect6"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="371.40607" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c81414;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="480.51447"
+       y="351.26389"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="480.51447"
+         y="351.26389">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#14c814;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="467.13446"
+       y="409.28427"
+       id="text7"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         x="467.13446"
+         y="409.28427">671</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#14c814;stroke-width:1.90001;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8)"
+       d="m 390.34794,400.61021 h 27.91373 v -58.37663 h 26.10001"
+       id="path7" />
+    <g
+       id="g9"
+       transform="translate(263.389)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect8"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="313.38568" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect9"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="371.40607" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c81414;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="611.94275"
+       y="351.26389"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="611.94275"
+         y="351.26389">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#14c814;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="597.18274"
+       y="409.28427"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="597.18274"
+         y="409.28427">122</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#14c814;stroke-width:1.90001;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8)"
+       d="m 522.13622,400.61021 h 27.91373 v -58.37663 h 26.10001"
+       id="path10" />
+    <g
+       id="g13"
+       transform="translate(395.17728)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="313.38568" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect13"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="371.40607" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c81414;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="743.73102"
+       y="351.26389"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         x="743.73102"
+         y="351.26389">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#14c814;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="743.55103"
+       y="409.28427"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         x="743.55103"
+         y="409.28427">5</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#14c814;stroke-width:1.90001;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8)"
+       d="m 653.9245,400.61021 h 27.91373 v -58.37663 h 26.10001"
+       id="path14" />
+    <g
+       id="g15"
+       transform="translate(526.96556)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect14"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="313.38568" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.9796;stroke-dasharray:none;stroke-opacity:1"
+         id="rect15"
+         width="58.020401"
+         height="58.020401"
+         x="326.01157"
+         y="371.40607" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c81414;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="875.51929"
+       y="351.26389"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         x="875.51929"
+         y="351.26389">3</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#14c814;stroke-width:1.90001;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8)"
+       d="m 785.71278,400.61021 h 27.91373 v -58.37663 h 26.10001"
+       id="path16" />
+    <text
+       xml:space="preserve"
+       style="font-size:18.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="471.46512"
+       y="454.29065"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         x="471.46512"
+         y="454.29065">413</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="602.70044"
+       y="454.29065"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         x="602.70044"
+         y="454.29065">671</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="733.50067"
+       y="454.29065"
+       id="text19"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         x="733.50067"
+         y="454.29065">122</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="876.62897"
+       y="454.29065"
+       id="text20"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="876.62897"
+         y="454.29065">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'TeX Gyre schola';-inkscape-font-specification:'TeX Gyre schola';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="846.93127"
+       y="271.12527"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         x="846.93127"
+         y="271.12527">KONEC</tspan></text>
+    <path
+       style="fill:#1414c8;fill-opacity:1;stroke:#1414c8;stroke-width:2;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 881.98733,277.18968 v 22.31965"
+       id="path22" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="528.88019"
+       y="491.17499"
+       id="text23"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         x="528.88019"
+         y="491.17499">ADRESY V PAMĚTI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1414c8;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       x="344.91376"
+       y="454.29065"
+       id="text24"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         x="344.91376"
+         y="454.29065">93</tspan></text>
+  </g>
+</svg>
