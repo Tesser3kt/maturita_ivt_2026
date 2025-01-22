@@ -42,5 +42,6 @@
         "name": "lualatex",
         "tools": ["lualatex"]
     }
-]
+],
+"cSpell.language": "cz-CS,cs"
 }
