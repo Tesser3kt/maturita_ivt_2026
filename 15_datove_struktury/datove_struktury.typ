@@ -131,7 +131,7 @@ Uzly nemusejí být v paměti seřazeny za sebou.
 
 === Náročnost operací
 
-- uložení i přepis hodnoty podle indexu: *úměrné délce seznamu*
+- uložení i přepis hodnoty podle pozice: *úměrné délce seznamu*
   #list[
     Musím procházet seznam od *začátku*, dokud se nedostanu na danou pozici.
   ]
@@ -141,9 +141,9 @@ Uzly nemusejí být v paměti seřazeny za sebou.
     Stačí připojit další uzel a upravit ten předchozí / následující.
   ]
 #pause
-- přidání / odebrání podle indexu: *úměrné délce seznamu*
+- přidání / odebrání podle pozice: *úměrné délce seznamu*
   #list[
-    Samotný proces přidání / odebrání je instantní, ale musím se na daný index
+    Samotný proces přidání / odebrání je instantní, ale musím se na danou pozici
     nejprve dostat.
   ]
 #pause
@@ -152,3 +152,11 @@ Uzly nemusejí být v paměti seřazeny za sebou.
     Musím seznam procházet od začátku, dokud hodnotu nenajdu.
   ]
 
+== Záznam (Record, Struct)
+
+Datová struktura obsahující množství *pojmenovaných* údajů často různých
+datových typů.
+#pause
+Jména údajů jsou vlastně *proměnné uchovávající adresu v paměti*, kde začíná
+příslušná část záznamu.
+#pause
