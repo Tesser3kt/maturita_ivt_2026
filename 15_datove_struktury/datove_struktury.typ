@@ -93,7 +93,7 @@ do vnitřní paměti bezprostředně za sebou. Přístup k hodnotám probíhá p
 
 === Náročnost operací
 
-- uložení i přepis hodnoty podle indexu: *instantní*
+- uložení, přepis i přečtení hodnoty podle indexu: *instantní*
   - Zkrátka zapíšu hodnotu do RAM na *`začátek pole + index`*.
 #pause
 - odebrání hodnoty ze zadního konce: *instantní* 
@@ -131,7 +131,7 @@ Uzly nemusejí být v paměti seřazeny za sebou.
 
 === Náročnost operací
 
-- uložení i přepis hodnoty podle pozice: *úměrné délce seznamu*
+- uložení, přepis i přečtení hodnoty podle pozice: *úměrné délce seznamu*
   #list[
     Musím procházet seznam od *začátku*, dokud se nedostanu na danou pozici.
   ]
@@ -160,3 +160,45 @@ datových typů.
 Jména údajů jsou vlastně *proměnné uchovávající adresu v paměti*, kde začíná
 příslušná část záznamu.
 #pause
+#figure(
+  image("figs/record.svg", width: 50%)
+)
+#pagebreak()
+
+=== Náročnost operací
+- uložení / přepis / přečtení hodnoty podle jména: *instantní*
+  #list[
+    Proměnná s daným jménem prostě ukazuje na adresu v RAM.
+  ]
+#pause
+- přidání / odebrání na koncích: *nedává smysl*
+  #list[
+    Záznam nemá konce lol.
+  ]
+#pause
+- přidání / odebrání podle jména: *nelze*
+  #list[
+    Některé struktury jako třeba `dict` v Pythonu přidání umožňují, ale v
+    principu *nelze* proměnné záznamu mazat, upravovat ani přidávat.
+  ]
+#pause
+- nalezení konkrétní hodnoty: *úměrné počtu proměnných v záznamu*
+  #list[
+    Záznam musím procházet proměnnou po proměnné a hledat hodnotu.
+  ]
+
+== Hash Table
+
+Struktura stvořená pro okamžité nalezení dané hodnoty.\
+#pause
+Pomocí předem dané *"hashovací" funkce* převádí hodnoty na adresy v paměti, kam
+potom hodnoty ukládá.
+#pause
+#figure(
+  image("figs/hash.png", width: 80%)
+)
+#pagebreak()
+
+=== Náročnost operací
+
+- uložení hodnoty: *instantní*
