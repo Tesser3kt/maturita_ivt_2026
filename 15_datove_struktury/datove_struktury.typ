@@ -189,16 +189,41 @@ příslušná část záznamu.
 
 == Hash Table
 
-Struktura stvořená pro okamžité nalezení dané hodnoty.\
+Struktura stvořená pro okamžité nalezení dané hodnoty podle klíče.\
 #pause
-Pomocí předem dané *"hashovací" funkce* převádí hodnoty na adresy v paměti, kam
-potom hodnoty ukládá.
+Pomocí předem dané *"hashovací" funkce* převádí hodnoty *klíče* na *adresy* v
+paměti, kam potom ukládá *hodnoty*.\
+#pause
+Hashovací funkce je *málokdy prostá*; vzniklé kolize se řeší různě, například
+řetězením hashovacích funkcí.
 #pause
 #figure(
-  image("figs/hash.png", width: 80%)
+  image("figs/hash.png", width: 100%)
 )
 #pagebreak()
 
 === Náročnost operací
 
-- uložení hodnoty: *instantní*
+- uložení / přečtení / přepis hodnoty podle klíče: *instantní*
+  #list[
+    Spočívá v aplikaci hashovací funkce, která obvykle trvá úměrně délce klíče.
+  ]
+- přidání hodnoty s klíčem: *obvykle instantní*
+  #list[
+    Často stačí aplikace hashovací funkce. Kolize ale mohou způsobit zpomalení.
+  ]
+- odebrání hodnoty podle klíče: *nedává smysl*
+  #list[
+    Odebrání klíče nelze učinit, protože se jedná pouze o vstup do uložené
+    hashovací funkce. Klíče samotné nikde uloženy nejsou.
+  ]
+- nalezení klíče: *instantní*
+  #list[
+    Stačí ověřit, zda je něco uloženou pod hashem klíče.
+  ]
+- nalezení hodnoty: *nemožné*
+  #list[
+    Základní hash table nikde neuchovává pozice v paměti všech svých hodnot.
+    Struktury jako třeba `dict` v Pythonu tenhle problém řeší ukládáním hodnot
+    do vhodných datových struktur.
+  ]
