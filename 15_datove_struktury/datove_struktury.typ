@@ -23,7 +23,7 @@
   ),
   config-info(
     title: "Datové struktury",
-    subtitle: "pole, seznam, záznam, hash, strom, zásobník, fronta",
+    subtitle: "pole, seznam, záznam, hash, binární strom, zásobník, fronta",
     author: "Adamus Colepaticius Trolo",
     date: datetime.today(),
     institution: "GEVO"
@@ -87,7 +87,7 @@ do vnitřní paměti bezprostředně za sebou. Přístup k hodnotám probíhá p
 #pause
 
 #figure(
-  image("figs/array.svg", width: 80%)
+  image("figs/array.png", width: 80%)
 )
 #pagebreak()
 
@@ -125,7 +125,7 @@ Datová struktura složená z *uzlů*. Každý uzel obsahuje dvě data:
 Uzly nemusejí být v paměti seřazeny za sebou.
 #pause
 #figure(
-  image("figs/list.svg", width: 60%)
+  image("figs/list.png", width: 60%)
 )
 #pagebreak()
 
@@ -161,7 +161,7 @@ Jména údajů jsou vlastně *proměnné uchovávající adresu v paměti*, kde 
 příslušná část záznamu.
 #pause
 #figure(
-  image("figs/record.svg", width: 50%)
+  image("figs/record.png", width: 50%)
 )
 #pagebreak()
 
@@ -208,22 +208,72 @@ Hashovací funkce je *málokdy prostá*; vzniklé kolize se řeší různě, nap
   #list[
     Spočívá v aplikaci hashovací funkce, která obvykle trvá úměrně délce klíče.
   ]
+#pause
 - přidání hodnoty s klíčem: *obvykle instantní*
   #list[
     Často stačí aplikace hashovací funkce. Kolize ale mohou způsobit zpomalení.
   ]
+#pause
 - odebrání hodnoty podle klíče: *nedává smysl*
   #list[
     Odebrání klíče nelze učinit, protože se jedná pouze o vstup do uložené
     hashovací funkce. Klíče samotné nikde uloženy nejsou.
   ]
+#pagebreak()
+
+=== Náročnost operací
 - nalezení klíče: *instantní*
   #list[
     Stačí ověřit, zda je něco uloženou pod hashem klíče.
   ]
+#pause
 - nalezení hodnoty: *nemožné*
   #list[
     Základní hash table nikde neuchovává pozice v paměti všech svých hodnot.
     Struktury jako třeba `dict` v Pythonu tenhle problém řeší ukládáním hodnot
-    do vhodných datových struktur.
+    (i klíčů) do vhodných datových struktur.
+  ]
+
+== Binární strom (Binary Search Tree)
+
+Binární strom je struktura složená z *uzlů* s nulou až dvěma *následníky*.\
+#pause
+Uzly jsou obvykle umístěny tak, aby první následník měl menší hodnotu než daný
+uzel a druhý následník měl hodnotu větší.\
+#pause
+To umožňuje v binárním stromě hledat uzly s danou hodnotou v čase *úměrném
+výšce* (a nikoli délce) stromu.\
+#pause
+#figure(
+  image("figs/binary-tree.png", width: 60%)
+)
+#pagebreak()
+
+=== Náročnost operací
+
+- uložení hodnoty: *úměrné výšce stromu*
+  #list[
+    Uložení hodnoty *na přesnou pozici* nelze. Uzel s hodnotou se umístí podle
+    její velikosti.
+  ]
+#pause
+- přepsání hodnoty na dané pozici: *úměrné výšce stromu*
+  #list[
+    Uzel s přepsanou hodnotou se musí často ve stromě přesouvat.
+  ]
+#pause
+- přečtení hodnoty na dané pozici: *úměrné výšce stromu*
+  #list[
+    Je třeba procházet strom od kořene dolu.
+  ]
+#pause
+- odebrání hodnoty podle pozice: *úměrné výšce stromu*
+  #list[
+    Samotné odebrání je okamžité, ale je třeba se od uzlu nejprve dostat.
+  ]
+#pause
+- nalezení dané hodnoty: *úměrné výšce stromu*
+  #list[
+    Podle velikost hodnoty jdu z každého uzlu buď do prvního, nebo do druhého
+    následníka.
   ]
