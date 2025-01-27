@@ -19,7 +19,7 @@
   ),
   config-common(
     datetime-format: "[day padding:none]. [month padding:none]. [year]",
-    handout: true
+    handout: false
   ),
   config-info(
     title: "Datové struktury",
@@ -50,8 +50,8 @@ vnitřní paměti.
 #pause
 
 Při jejím návrhu pracujeme téměř výhradně s von Neumannovým modelem počítače a
-uvažujeme, že vnitřní paměť je #alert[*random access*], tedy na danou adresu je
-možný okamžitý přístup.
+uvažujeme, že vnitřní paměť je #alert[*random access*]: na danou adresu je možný
+okamžitý přístup.
 
 #pause
 
@@ -184,15 +184,16 @@ příslušná část záznamu.
 #pause
 - nalezení konkrétní hodnoty: *úměrné počtu proměnných v záznamu*
   #list[
-    Záznam musím procházet proměnnou po proměnné a hledat hodnotu.
+    Záznam musím procházet proměnnou po proměnné a hledat hodnotu. Tato operace
+    je ale u záznamu málokdy žádoucí.
   ]
 
 == Hash Table
 
 Struktura stvořená pro okamžité nalezení dané hodnoty podle klíče.\
 #pause
-Pomocí předem dané *"hashovací" funkce* převádí hodnoty *klíče* na *adresy* v
-paměti, kam potom ukládá *hodnoty*.\
+Pomocí předem dané *"hashovací" funkce* převádí *klíče* na *adresy* v paměti,
+kam potom ukládá *hodnoty*.\
 #pause
 Hashovací funkce je *málokdy prostá*; vzniklé kolize se řeší různě, například
 řetězením hashovacích funkcí.
@@ -224,7 +225,7 @@ Hashovací funkce je *málokdy prostá*; vzniklé kolize se řeší různě, nap
 === Náročnost operací
 - nalezení klíče: *instantní*
   #list[
-    Stačí ověřit, zda je něco uloženou pod hashem klíče.
+    Stačí ověřit, zda je něco uloženo pod hashem klíče.
   ]
 #pause
 - nalezení hodnoty: *nemožné*
@@ -269,11 +270,32 @@ výšce* (a nikoli délce) stromu.\
 #pause
 - odebrání hodnoty podle pozice: *úměrné výšce stromu*
   #list[
-    Samotné odebrání je okamžité, ale je třeba se od uzlu nejprve dostat.
+    Samotné odebrání je okamžité, ale je třeba se do uzlu nejprve dostat.
   ]
 #pause
 - nalezení dané hodnoty: *úměrné výšce stromu*
   #list[
-    Podle velikost hodnoty jdu z každého uzlu buď do prvního, nebo do druhého
+    Podle velikosti hodnoty jdu z každého uzlu buď do prvního nebo do druhého
     následníka.
   ]
+
+== Zásobník a fronta (Stack and Queue)
+
+Zásobník a fronta nejsou struktury jako takové, ale spíš způsoby využití jiných
+struktur.\
+#pause
+*Zásobníkem* myslíme libovolnou datovou strukturu, na jejíž konec lze přidávat a
+ze stejného konce lze odebírat hodnotu *instantně*.\
+#pause
+Takové struktuře se někdy přezdívá *FILO* (First In Last Out), protože první
+přidaná hodnota bude odebrána jako poslední.\
+#pause
+*Fronta* na druhou stranu funguje jako ... fronta. Hodnoty se vkládají na jeden
+konec a odebírají z druhého.\
+#pause
+Někdy se značí jako *FIFO* (First In First Out) struktura.\
+#pause
+K implementaci zásobníku se většinou používá *pole* nebo *seznam*.\
+#pause
+K implementaci fronty není pole vhodné (je třeba instantní manipulace s oběma
+konci), používá se téměř výhradně *seznam*.
