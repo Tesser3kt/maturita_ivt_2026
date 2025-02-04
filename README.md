@@ -168,3 +168,8 @@ zadání lehkých úloh podle objemu probrané látky.**
 11. Nakreslete diagram tiskárny (laserové/inkoustové) a vysvětlete na něm princip funkce zařízení.
 12. Nakreslete diagram LCD panelu a vysvětlete na něm princip funkce zařízení.
 13. Nakreslete diagram DLP projektoru a vysvětlete na něm princip funkce zařízení.
+
+### Historie počítačů
+
+14. Napište kód (pseudokód, Python, ...) implementující zadaný diagram datové cesty a řídící FSM.
+15. Nakreslete diagram datové cesty a řídící FSM odpovídající zadanému kusu kódu v Pythonu.
