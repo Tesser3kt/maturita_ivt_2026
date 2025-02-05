@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
-   sodipodi:docname="datapath.svg"
+   sodipodi:docname="datapath_2.svg"
    inkscape:export-filename="datapath.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="0.39702465"
-     inkscape:cx="1059.1282"
-     inkscape:cy="546.56555"
+     inkscape:zoom="1.1229553"
+     inkscape:cx="2252.5385"
+     inkscape:cy="137.13814"
      inkscape:window-width="1896"
      inkscape:window-height="1020"
      inkscape:window-x="0"
@@ -171,6 +171,16 @@
        position="137.64979,26.226847"
        orientation="1,0"
        id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="163.21341,64.621546"
+       orientation="0,-1"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="604.13859,177.75339"
+       orientation="0,-1"
+       id="guide6"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -384,14 +394,14 @@
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
-       x="191.89194"
-       y="98.69725"
+       x="191.9321"
+       y="99.158134"
        id="text36"><tspan
          sodipodi:role="line"
          id="tspan36"
          style="stroke-width:1.05805"
-         x="191.89194"
-         y="98.69725">1</tspan></text>
+         x="191.9321"
+         y="99.158134">0</tspan></text>
     <rect
        style="fill:#f06f00;fill-opacity:0.280069;stroke:#000000;stroke-width:1.05805;stroke-opacity:1"
        id="rect1"
@@ -424,7 +434,7 @@
          id="tspan34"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="169.58299"
-         y="196.83054">a</tspan></text>
+         y="196.83054">x</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
@@ -435,7 +445,7 @@
          id="tspan35"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="339.86646"
-         y="198.05865">b</tspan></text>
+         y="198.05865">n</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideRounded)"
        d="m 196.26671,102.45463 v 34.13199"
@@ -444,14 +454,14 @@
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
-       x="316.37558"
+       x="294.58527"
        y="98.69725"
        id="text37"><tspan
          sodipodi:role="line"
          id="tspan37"
          style="stroke-width:1.05805"
-         x="316.37558"
-         y="98.69725">5</tspan></text>
+         x="294.58527"
+         y="98.69725">232811</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideRounded)"
        d="m 320.70854,102.45463 v 34.13199"
@@ -468,13 +478,13 @@
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
        x="185.62386"
-       y="272.69061"
+       y="272.23547"
        id="text42"><tspan
          sodipodi:role="line"
          id="tspan42"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="185.62386"
-         y="272.69061">*</tspan></text>
+         y="272.23547">+</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideRounded)"
        d="m 173.53874,206.33763 v 46.65169"
@@ -491,13 +501,13 @@
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
        x="354.78732"
-       y="272.23544"
+       y="272.69458"
        id="text45"><tspan
          sodipodi:role="line"
          id="tspan45"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="354.78732"
-         y="272.23544">+</tspan></text>
+         y="272.69458">/</tspan></text>
     <path
        style="fill:none;fill-opacity:0.280069;stroke:#000000;stroke-width:1.17706;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker46)"
        d="m 344.23716,206.33763 -0.0204,46.65169"
@@ -506,14 +516,14 @@
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
-       x="364.5636"
-       y="230.12857"
+       x="365.1232"
+       y="229.4155"
        id="text46"><tspan
          sodipodi:role="line"
          id="tspan46"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
-         x="364.5636"
-         y="230.12857">-1</tspan></text>
+         x="365.1232"
+         y="229.4155">10</tspan></text>
     <path
        style="fill:none;fill-opacity:0.280069;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker48)"
        d="m 373.81073,234.42086 0.0646,18.09457"
@@ -537,16 +547,16 @@
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
-       x="69.566986"
-       y="149.42805"
+       x="69.290192"
+       y="150.756"
        id="text58"><tspan
          sodipodi:role="line"
          id="tspan58"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
-         x="69.566986"
-         y="149.42805">a<tspan
-   style="font-size:9.39162px;baseline-shift:sub;stroke-width:1.05805"
-   id="tspan59">sel</tspan></tspan></text>
+         x="69.290192"
+         y="150.756">x<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3">sel</tspan></tspan></text>
     <path
        style="fill:#51d500;fill-opacity:0.180451;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker60)"
        d="M 97.389981,146.87427 H 126.36835"
@@ -643,15 +653,15 @@
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
        x="423.77762"
-       y="150.65619"
+       y="150.756"
        id="text68"><tspan
          sodipodi:role="line"
          id="tspan68"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="423.77762"
-         y="150.65619">b<tspan
-   style="font-size:9.39162px;baseline-shift:sub;stroke-width:1.05805"
-   id="tspan71">sel</tspan></tspan></text>
+         y="150.756">n<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan4">sel</tspan></tspan></text>
     <path
        style="fill:#51d500;fill-opacity:0.180451;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker60)"
        d="M 420.12027,146.87427 H 391.1419"
@@ -684,7 +694,7 @@
          id="tspan74"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="526.50409"
-         y="230.49976">0</tspan></text>
+         y="230.49976">1</tspan></text>
     <path
        style="fill:none;fill-opacity:0.280069;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker48)"
        d="m 530.78474,234.89475 0.0646,18.09457"
@@ -693,14 +703,14 @@
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
-       x="510.2919"
-       y="272.23544"
+       x="514.04852"
+       y="272.23547"
        id="text75"><tspan
          sodipodi:role="line"
          id="tspan75"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
-         x="510.2919"
-         y="272.23544">==</tspan></text>
+         x="514.04852"
+         y="272.23547">&lt;</tspan></text>
     <rect
        style="fill:#ff00b6;fill-opacity:0.295916;stroke:#000000;stroke-width:1.08535;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
        id="rect75"
@@ -749,22 +759,22 @@
          id="tspan82"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="653.91437"
-         y="140.09187">b<tspan
-   style="font-size:9.39162px;baseline-shift:sub;stroke-width:1.05805"
-   id="tspan81">sel</tspan></tspan></text>
+         y="140.09187">n<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan6">sel</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
        x="654.09503"
-       y="115.75179"
+       y="117.17479"
        id="text84"><tspan
          sodipodi:role="line"
          id="tspan84"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="654.09503"
-         y="115.75179">a<tspan
-   style="font-size:9.39162px;baseline-shift:sub;stroke-width:1.05805"
-   id="tspan83">sel</tspan></tspan></text>
+         y="117.17479">x<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan5">sel</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';text-align:center;text-anchor:middle;fill:none;fill-opacity:0.295916;stroke:#000000;stroke-width:0.476999;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
@@ -795,13 +805,13 @@
        xml:space="preserve"
        style="font-size:14.4487px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805;stroke-opacity:1"
        x="202.02191"
-       y="231.31621"
+       y="230.12857"
        id="text46-5"><tspan
          sodipodi:role="line"
          id="tspan46-7"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05805"
          x="202.02191"
-         y="231.31621">2</tspan></text>
+         y="230.12857">1</tspan></text>
     <path
        style="fill:none;fill-opacity:0.280069;stroke:#000000;stroke-width:1.08535;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker48-9)"
        d="m 206.32423,235.06233 0.0646,18.09456"
