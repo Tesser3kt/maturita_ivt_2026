@@ -94,10 +94,10 @@ do vnitřní paměti bezprostředně za sebou. Přístup k hodnotám probíhá p
 === Náročnost operací
 
 - uložení, přepis i přečtení hodnoty podle indexu: *instantní*
-  - Zkrátka zapíšu hodnotu do RAM na *`začátek pole + index`*.
+  #list[Zkrátka zapíšu hodnotu do RAM na *`začátek pole + index`*.]
 #pause
 - odebrání hodnoty ze zadního konce: *instantní* 
-  - Zmenším velikost pole o 1.
+  #list[Zmenším velikost pole o 1.]
 #pause
 - odebrání hodnoty na jiné pozici: *úměrné délce pole*
   #list[
@@ -112,7 +112,7 @@ do vnitřní paměti bezprostředně za sebou. Přístup k hodnotám probíhá p
   ]
 #pause
 - nalezení konkrétní hodnoty: *úměrné délce pole*
-  - Prostě musím celé pole projít hodnotu po hodnotě.
+  #list[Prostě musím celé pole projít hodnotu po hodnotě.]
 
 == Seznam (List)
 
