@@ -173,3 +173,9 @@ zadání lehkých úloh podle objemu probrané látky.**
 
 14. Napište kód (pseudokód, Python, ...) implementující zadaný diagram datové cesty a řídící FSM.
 15. Nakreslete diagram datové cesty a řídící FSM odpovídající zadanému kusu kódu v Pythonu.
+
+### Operační systém
+
+16. Uložte danou posloupnost dat (representující obrázek či audio) i s hlavičkou podle zadání.
+17. Defragmentujte daný blok paměti podle zadání.
+18. Zkomprimujte daný soubor (obrázek či audio) run-length kompresí či (Huffmanovým) stromem priorit.
