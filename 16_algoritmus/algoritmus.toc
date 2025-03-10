@@ -1,0 +1,10 @@
+\babel@toc {nil}{}\relax 
+\beamer@sectionintoc {1}{Logaritmus algoritmus v těle mám... rytmus}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Rychlost algoritmu}{7}{0}{1}
+\beamer@subsectionintoc {1}{2}{Flow-chart}{11}{0}{1}
+\beamer@sectionintoc {2}{Programátorské techniky}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Rekurze}{15}{0}{2}
+\beamer@subsectionintoc {2}{2}{Rozděl a panuj}{16}{0}{2}
+\beamer@subsectionintoc {2}{3}{Hlad}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Backtracking}{21}{0}{2}
+\beamer@subsectionintoc {2}{5}{Dynamicka}{22}{0}{2}
