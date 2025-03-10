@@ -179,3 +179,7 @@ zadání lehkých úloh podle objemu probrané látky.**
 16. Uložte danou posloupnost dat (representující obrázek či audio) i s hlavičkou podle zadání.
 17. Defragmentujte daný blok paměti podle zadání.
 18. Zkomprimujte daný soubor (obrázek či audio) run-length kompresí či (Huffmanovým) stromem priorit.
+
+### Počítačové sítě, internet
+
+19. Navrhněte topologii počítačové sítě podle zadaných kritérií.

@@ -42,7 +42,7 @@ class List:
 
         self.root = rut
 
-    def insert_into(self, index: int, value: int) -> None:
+    def insert(self, index: int, value: int) -> None:
         next = self.root
         cumter = 0
         if index == 0:
@@ -57,7 +57,7 @@ class List:
             cumter += 1
             next = next.next
 
-    def delete_at(self, index: int) -> None:
+    def delete(self, index: int) -> None:
         previous = self.root
         iter = 0
 
@@ -79,14 +79,3 @@ class List:
         while next:
             print(next.value, end=" ")
             next = next.next
-
-
-list = List()
-list.append(5)
-list.append(7)
-list.prepend(69)
-list.print()
-print("sus")
-list.insert_into(10, 420)
-# list.delete_at(9463284326)
-list.print()
