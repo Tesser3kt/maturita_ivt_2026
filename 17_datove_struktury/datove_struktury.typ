@@ -19,7 +19,7 @@
   ),
   config-common(
     datetime-format: "[day padding:none]. [month padding:none]. [year]",
-    handout: false
+    handout: true
   ),
   config-info(
     title: "Datové struktury",
