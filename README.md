@@ -125,19 +125,73 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Znát typické oblasti využití každé topologie a schopnost navrhnout
     topologii sítě na základě daných požadavků.
 13. Schéma TCP/IP, protokoly a IP adresy
+    - Co je a k čemu je protokol? Jednoduché příklady.
+    - Důležité části jakéhokoliv protokolu.
+    - Příklady protokolů v počítačových sítích.
+    - Model OSI, specificicky model TCP/IP
+      - aplikační vrstva (protokoly HTTP a HTTPS, SSH, NTP, FTP, SMTP, ...).
+      - transportní vrstva (protokoly TCP a UDP -- porty),
+      - síťová vrstva (protokol IP -- IP adresa),
+      - fyzická vrstva (protokol Ethernet -- MAC adresa).
 14. Internet – vývoj internetu, architektura, služby
+    - Co je a k čemu je internet?
+    - Webové stránky (jak fungují, HTTP protokol, princip requestu).
+    - E-mail (jak funguje, SMTP pro odesílání, POP nebo IMAP pro přijímání).
+    - Přenos audia a videa po internetu (protokoly jako VoIP nebo IM).
+    - Domain Name System
+      - Co to je a k čemu to je.
+      - Jak se tvoří jméno domény a jak se podle něj najde IP adresa serveru.
 
 ### Programování
 15. Počítačový program, programovací jazyk
+    - Co je počítačový program.
+    - Co je a k čemu je programovací jazyk.
+    - Syntax a sémantika, rozdíly s lidskými jazyky.
+    - Rozdělení programovacích jazyků podle
+      - úrovně (high-level, low-level, machine code) + funkční rozdíly mezi úrovněmi + příklady konkrétních jazyků,
+      - způsobu překladu (kompilované vs. interpretované) + výhody a nevýhody každého způsobu,
+      - zápisu příkazů (procedurální vs. funkcionální) + princip obou zápisů + příklady.
 16. Algoritmizace úlohy, vlastnosti algoritmu, flowchart
+    - Co je a k čemu je algoritmus.
+    - Základní vlastnosti algoritmu.
+    - Časová a prostorová složitost.
+    - Flowchart + příklady.
+    - Programátorské techniky (ke každé vysvětlení + příklady):
+      - rekurse,
+      - rozděl a panuj (DaC -- divide and conquer),
+      - hladovost,
+      - backtracking,
+      - dynamické programování.
 17. Základní programové a datové struktury, třídící algoritmy
-18. Vývoj aplikací (IDE, debugging, kompilace, cross-platform)
+    - K čemu jsou datové struktury.
+    - Základní operace na datových strukturách.
+    - Typy datových struktur (ke každé vysvětlení + příklad využití):
+      - pole,
+      - seznam,
+      - záznam,
+      - hash table,
+      - binární (vyhledávací) strom,
+      - zásobník a fronta.
+18. Vývoj aplikací (IDE, debugging, kompilace)
+    - Co je a k čemu je IDE, jeho části.
+    - Textový editor -- co je a k čemu je.
+      - plain text vs. rich text,
+      - příklady základních a pokročilých funkcí.
+    - Debugger -- co a k čemu.
+      - základní funkce,
+      - princip fungování (debug symbols, breakpointy, krokování, čtení a zápis za běhu programu),
+    - Kompilátor -- co a k čemu.
+      - single pass vs. multi pass + výhody a nevýhody,
+      - princip fungování + stádia překladu
+        - front end (kontrola syntaxe a typů, mezijazyk),
+        - middle end (CFG a call graph, optimalisace),
+        - back end (překlad do CPU instrukcí, následná optimalisace pro dané CPU a generování strojového kódu).
 19. Umělá inteligence
 
 ### Web
 20. HTML, CSS, JavaScript
-21. Frameworky – CSS (PostCSS, Bootstrap, Tailwind), JavaScript (React, Angular)
-22. Backend – PHP (WordPress), Python (Flask, Django), SQL a databáze
+21. Frameworky –- CSS (PostCSS, Bootstrap, Tailwind), JavaScript (React, Angular, Vue)
+22. Backend –- Python (Flask, Django), SQL a databáze
 
 ### Zbytek
 23. Licence, etika, zákony, hygiena
