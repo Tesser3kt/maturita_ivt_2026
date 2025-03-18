@@ -237,3 +237,10 @@ zadání lehkých úloh podle objemu probrané látky.**
 ### Počítačové sítě, internet
 
 19. Navrhněte topologii počítačové sítě podle zadaných kritérií.
+
+### Programování
+
+20. Nakreslete flowchart daného programu v Pythonu.
+21. Přepiště zadaný flowchart do libovolného programovacího jazyka.
+22. Implementujte uvedenou metodu spojového seznamu či hashovací funkci.
+23. Debuggujte zadaný program.

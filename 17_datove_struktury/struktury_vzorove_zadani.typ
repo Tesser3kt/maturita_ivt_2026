@@ -51,8 +51,8 @@
 ]
 #pagebreak()
 #enum(start: 2)[
-  Naprogramujte funkci `hash`, která daný (ve skutečném zadání jím bude jeden
-  z~následujících)
+  Naprogramujte funkci `hash`, která daný typ (ve skutečném zadání jím bude
+  jeden z~následujících)
   - `integer`,
   - `string`,
   převede na index v poli o dané velikosti. Snažte se, aby vaše hashovací funkce
