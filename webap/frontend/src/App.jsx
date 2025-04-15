@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import AddJudge from "./addcomps/add_judge.jsx";
+import AddCompetition from "./addcomps/add_competition.jsx";
+import AddVysledky from "./addcomps/add_vysledky.jsx";
+
+import ViewJudge from "./viewcomps/view_judge.jsx";
+import ViewCompPoints from "./viewcomps/view_comp_points.jsx";
+
+import FeatureButton from "./feature_button.jsx";
+
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [viewFeature, setViewFeature] = useState("");
+  const [addFeature, setAddFeature] = useState("");
 
+  const viewFeatures = ["ViewJudge", "ViewCompPoints", "Option 3", "Option 4"];
+  const addFeatures = ["AddJudge", "AddCompetition", "AddVysledky"];
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="wholeting">
+        <div className="choosers">
+          <div className="choosing">
+            <h1>What you want to see</h1>
+            <div className="buttons">
+              {viewFeatures.map((lab, index) => (
+                <FeatureButton
+                  label={lab}
+                  key={index}
+                  onChoose={setViewFeature}
+                  choosen={viewFeature}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="chosing">
+            <h1> What you want to add? </h1>
+
+            <div className="buttons">
+              {addFeatures.map((lab, index) => (
+                <FeatureButton
+                  label={lab}
+                  key={index}
+                  onChoose={setAddFeature}
+                  choosen={addFeature}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="features">
+          <div className="viewing">
+            {viewFeature == "ViewJudge" && <ViewJudge />}
+            {viewFeature == "ViewCompPoints" && <ViewCompPoints />}
+          </div>
+          <div className="adding">
+            {addFeature == "AddJudge" && <AddJudge />}
+            {addFeature == "AddCompetition" && <AddCompetition />}
+            {addFeature == "AddVysledky" && <AddVysledky />}
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
