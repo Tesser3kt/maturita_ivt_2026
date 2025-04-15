@@ -1,0 +1,85 @@
+body {
+  /* Margin je vnejsi okraj, padding je vnitrni okraj. */
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  /* Udela z teckovaneho seznamu vodorovny neteckovany seznam. */
+  list-style-type: none;
+  display: inline-flex;
+}
+.list-item {
+  /* Padding i margin se pisou ve smeru hodinovych rucicek pocinaje polednem. */
+  padding: 0 0.5rem 0 0.5rem;
+}
+.square {
+  width: 150px;
+  height: 150px;
+
+  /*  */
+  background-color: red;
+
+  /* Pozice na strance:
+    static -- defaultni,
+    absolute -- vzdy na stejnem miste vzhledem k rodici,
+    relative -- vzhledem k okrajum stranky,
+    fixed -- vzdy na stejnem miste bez ohledu na scroll.
+  */
+  position: fixed;
+
+  /* Trik na centrovani. */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 2rem;
+  margin: 2rem;
+  display: none;
+}
+.square-2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(40, 50, 100);
+}
+.square-3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(210, 80, 200);
+}
+
+.form-container label {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff1132;
+}
+
+.squares-container {
+  min-height: 1000px;
+  border: 1px solid red;
+  margin: 2rem 0 2rem 0;
+
+  display: flex;
+  /* Smer toku. */
+  flex-direction: row;
+  /* Horizontalni rozdeleni */
+  justify-content: space-evenly;
+  /* Vertikalni rozdeleni. */
+  align-items: center;
+  display: none;
+}
+
+.squares-container-2 {
+  min-height: 1000px;
+  border: 1px solid red;
+  margin: 2rem 0 2rem 0;
+
+  display: grid;
+  /* Pocet sloupcu a mezery. */
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 100px;
+
+  justify-items: center;
+  align-items: center;
+}
