@@ -1,0 +1,78 @@
+.wholeting {
+  display: flex;
+  height: 100vw;
+  max-height: 100vw;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.active {
+  border: 10px solid blue;
+}
+
+.choosers {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  border: 2px solid blue;
+  align-self: flex-start;
+}
+
+.choosers>div {
+  background: lightgray;
+  max-width: 30vw;
+  padding: 20px;
+  width: 45%;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 5rem;
+}
+
+.JudgesInputs {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: min-content;
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 1.2rem;
+}
+
+.CompetitionGeneral {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 1rem;
+}
+
+#notin {
+  background-color: red;
+}
