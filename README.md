@@ -65,6 +65,19 @@ zadání lehkých úloh podle objemu probrané látky.**
 
     U každého typu paměti znát princip funkce a průběh záznamu dat.
 4. I/O zařízení
+    - Co jsou a k čemu jsou.
+    - Pár základních způsobů připojení (USB, PS-2, Jack atd.).
+    - Myši
+        - technologie myší: mechanická, optická, laserová (podrobný popis a rozdíly),
+        - různé tvary myší (výhody / nevýhody).
+    - Klávesnice
+        - technologie klávesnic: membránová, mechanická (podrobný popis a rozdíly)
+        - různé tvary klávesnic (výhody / nevýhody)
+    - Drivery a řadiče
+        - Co jsou a k čemu jsou drivery.
+        - Jak drivery fungují (jen zevrubně).
+        - Co jsou a k čemu jsou řadiče.
+        - Interakce mezi drivery a řadiči (aneb proč nemusí mít každá myš vlastní driver).
 5. Tiskárny (Pro spravne zobrazeni prezentace pouzijte Okular nebo Adobe Acrobat)
     - tisknou
     - inkoustové
@@ -84,6 +97,21 @@ zadání lehkých úloh podle objemu probrané látky.**
    Rozumět principu funkce každé displejové i projektorové technologie.
 ### Historie
 7. Historie počítačů
+    - Abstraktní definice počítače, teoretické modely počítačů.
+    - Popis funkce Turingova stroje.
+    - Typy počítačů: analogové, digitální
+      - Co jsou a jaké mají výhody / nevýhody analogové počítače.
+      - Příklady využití analogových počítačů.
+      - Co jsou a jaké mají výhody / nevýhody digitánlí počítače.
+      - Příklady využití digitálních počítačů.
+    - Pár milníků historie počítačů (data jsou wtv, stačí přibližně):
+      - děrné štítky (jak zevrubně fungují),
+      - Turingův stroj,
+      - transistor,
+      - první programovací jazyk (COBOL),
+      - mikroprocesor,
+      - UNIX,
+      - World Wide Web
 8. Von Neumannova architektura
     - Co to je konečný automat (finite-state machine) a datová cesta (datapath). Jakým účelům slouží.
     - von Neumannův model
@@ -94,7 +122,24 @@ zadání lehkých úloh podle objemu probrané látky.**
 
 ### Práce s daty
 9. Operační systémy
+    - Co to je a k čemu to je.
+    - Jádro operačního systému (prostředník mezi aplikacemi a hardware).
+      - procesy,
+      - interrupt signal (softwarový, hardwarový),
+      - drivery.
+    - Rozdělení výpočetní síly a paměti (time-sharing vs. real-time).
 10. Souborové systémy
+    - Co to je a k čemu to je.
+    - Pár základních typů souborových systémů (EXT4, NTFS, APFS) a jejich využití.
+    - Vrstvy souborového systému:
+      - logická (tu vidí uživatel a aplikace -- soubory, složky, ...),
+      - virtuální (simulace změn pro odhalení potenciálních problémů),
+      - fyzická (interakce s externím úložištěm).
+    - Organizace dat na disku:
+      - oddíly,
+      - data a metadata,
+      - soubory a složky.
+    - Fragmentace a defragmentace (podrobný popis problému).
 11. Komprese
     - Co to je komprese. Co komprimujeme a proč.
     - Ztrátová a bezztrátová komprese, princip a rozdíly (např. algoritmus vs. nedokonalost zraku).
