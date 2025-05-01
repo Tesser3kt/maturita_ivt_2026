@@ -252,7 +252,7 @@ zadání lehkých úloh podle objemu probrané látky.**
         - absolutní a relativní odkaz na buňku
         - umět hledat, použít a nořit funkce
         - podmínky
-27. Trollení (:yum:)
+27. Trollení ( :yum: )
 
 ----------------------------
 
