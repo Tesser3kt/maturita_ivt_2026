@@ -187,7 +187,23 @@ zadání lehkých úloh podle objemu probrané látky.**
         - middle end (CFG a call graph, optimalisace),
         - back end (překlad do CPU instrukcí, následná optimalisace pro dané CPU a generování strojového kódu).
 19. Umělá inteligence
-    - Cp tp ke 
+    - Co to je a k čemu to je.
+    - Typy umělé inteligence podle užití (narrow, general, super).
+    - Princip umělé nervové sítě (forward a backward propagation).
+    - Míra úspěšnosti při kategorisaci: ztráta vs. přesnost
+        - ztráta = průměr součtů intensit nesprávných neuronů napříč testovacími vzorky
+        - přesnost = procentuální podíl správných odpovědí napříč testovacími vzorky
+    - Metody učení:
+        - Supervised Learning: základní metoda učení, správnost výstupu je dokonale měřitelná
+          - aktualisace váhových funkcí na základě ztráty v průběhu mnoha generací
+        - Unsupervised Learning: správnost výstupu je měřitelná jen relativně (vzhledem k předchozím či lidským výstupům)
+          - rozdělení procesu na menší procesy s lepší měřitelností úspěchu
+          - heuristika
+          - generační učení přirozeným výběrem
+        - Reinforcement Learning:
+          - princip trestů a odměn
+          - Exploration-Exploitation dilemma
+    - Příklady využití umělé inteligence.
 
 ### Web
 20. HTML, CSS, JavaScript
@@ -212,7 +228,7 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Princip komponent a vykreslování stránky pomocí JavaScriptu.
         - Co to je a k čemu je komponenta.
         - JSX syntax -- co povoluje a co ne, celkově idea kusu stránky jako návratové hodnoty funkce.
-        - kořenový prvek (v Reactu <div id="root">, kam React loaduje obsah stránky),
+        - kořenový prvek (v Reactu div id="root", kam React loaduje obsah stránky),
         - reload jednotlivých komponent na základě změny hodnoty proměnné (pořádně vysvětlit, jak tohle funguje),
         - hooky
 22. Backend –- Python (Flask, Django), SQL a databáze
