@@ -187,18 +187,56 @@ zadání lehkých úloh podle objemu probrané látky.**
         - middle end (CFG a call graph, optimalisace),
         - back end (překlad do CPU instrukcí, následná optimalisace pro dané CPU a generování strojového kódu).
 19. Umělá inteligence
+    - Cp tp ke 
 
 ### Web
 20. HTML, CSS, JavaScript
-21. Frameworky –- CSS (PostCSS, Bootstrap, Tailwind), JavaScript (React, Angular, Vue)
+    - Co to jsou za věci a k čemu jsou.
+    - Role HTML, CSS a JS při výrobě stránky (ve smyslu: HTML je layout, CSS je vzhled, JS je interakce s uživatelem).
+    - Základní HTML tagy: html, head, title, body, header, footer, div, p, a, ul, li, img, form, input, label, select, button.
+    - Základní CSS pravidla (a umět je použít):
+        - zacílení na prvek stránky podle tagu, id nebo třídy
+        - position: static | relative | absolute | fixed,
+        - okraje (margin / padding),
+        - šířka a výška (width / height, min-width / min-height, max-width / max-height),
+        - pozadí (background-color/size/position/image),
+        - vlastnosti textu (font-family/size/weight, color, text-align),
+        - rám (border-color/size/style),
+        - display: block | flex | grid (hodně důležité!)
+            - umět rozmístit věci ve flexu (na střed, s rovnoměrnými mezerami atd.) a v gridu (do daného počtu sloupců)
+    - JavaScript DOM (tj. jak vidí JS stránku)
+        - zacílení na konkrétní prvek stránky podle tagu, id, třídy,
+        - změna základních vlastností prvku stránky
+21. Frameworky –- JavaScript (React)
+    - Co to je JS framework a k čemu je.
+    - Princip komponent a vykreslování stránky pomocí JavaScriptu.
+        - Co to je a k čemu je komponenta.
+        - JSX syntax -- co povoluje a co ne, celkově idea kusu stránky jako návratové hodnoty funkce.
+        - kořenový prvek (v Reactu <div id="root">, kam React loaduje obsah stránky),
+        - reload jednotlivých komponent na základě změny hodnoty proměnné (pořádně vysvětlit, jak tohle funguje),
+        - hooky
 22. Backend –- Python (Flask, Django), SQL a databáze
 
 ### Zbytek
-23. Licence, etika, zákony, hygiena
+23. ~~Licence, etika, zákony, hygiena~~ **NEBUDE**
 24. Grafika, modely barev, barevná schémata
-25. Textové editory
+    - Rastrová grafika: representace obrázku jako posloupnosti pixelů
+        - Barevná schémata: representace jednotlivých pixelů obrázku
+            - RGB a CMYK (popis, rozdíly, použití)
+            - HSL ("lidská" representace barev)
+            - YUV (oddělení barevné a světelné složky, komprese)
+    - Vektorová grafika: representace obrázku jako množiny křivek v rovině
+    - Schopnost ovládat grafický editor (ukazovali jsme si Photoshop, ale můžete použít, co chcete, GIMP bude nainstalovaný taky)
+        - princip vrstev a masek
+        - základní nástroje: výběr, štětec, guma, gradient, color picker atd.
+25. ~~Textové editory~~ **NEBUDE**
 26. Tabulkové kalkulátory
-27. Trollení
+    - Co to je a k čemu to je.
+    - Schopnost ovládat Excel (specificky 1993 :smirk:)
+        - absolutní a relativní odkaz na buňku
+        - umět hledat, použít a nořit funkce
+        - podmínky
+27. Trollení (:sunglasses:)
 
 ----------------------------
 
@@ -244,3 +282,14 @@ zadání lehkých úloh podle objemu probrané látky.**
 21. Přepiště zadaný flowchart do libovolného programovacího jazyka.
 22. Implementujte uvedenou metodu spojového seznamu či hashovací funkci.
 23. Debuggujte zadaný program.
+
+### Web
+
+24. Vyrobte webovou stránky podle obrázkové předlohy.
+25. Doprogramujte nějakou základní funkcionalitu do Reactové aplikace.
+26. Nějaká Flask věc. **TODO**
+
+### Zbytek
+
+27. Vyrobte zadaný obrázek ve Photoshopu (použité vrstvy budete mít ve složce).
+28. Vyřešte zadanou úlohu v Excelu (nějaká základní statistika z obsahu buněk).
