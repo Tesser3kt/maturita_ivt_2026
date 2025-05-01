@@ -256,7 +256,7 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Role HTML, CSS a JS při výrobě stránky (ve smyslu: HTML je layout, CSS je vzhled, JS je interakce s uživatelem).
     - Základní HTML tagy: html, head, title, body, header, footer, div, p, a, ul, li, img, form, input, label, select, button.
     - Základní CSS pravidla (a umět je použít):
-        - zacílení na prvek stránky podle tagu, id nebo třídy
+        - zacívývoje lení na prvek stránky podle tagu, id nebo třídy
         - position: static | relative | absolute | fixed,
         - okraje (margin / padding),
         - šířka a výška (width / height, min-width / min-height, max-width / max-height),
