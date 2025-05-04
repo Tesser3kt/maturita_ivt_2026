@@ -1,0 +1,9 @@
+{
+  "spellright.language": ["Czech", "English"],
+  "spellright.documentTypes": ["markdown", "plaintext", "typst"],
+  "spellright.parserByClass": {
+    "typst": {
+      "parser": "markdown"
+    }
+  }
+}
