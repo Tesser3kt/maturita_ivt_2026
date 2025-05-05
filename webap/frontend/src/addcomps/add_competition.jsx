@@ -8,14 +8,32 @@ export default function AddCompetition() {
     points: "",
     finals: "",
     date: "",
+    umisteni: "",
+    pary: "",
   });
-  const [judges, setJudges] = useState([["", 0]]);
+  const [judges, setJudges] = useState([
+    ["", 0],
+    ["", 0],
+    ["", 0],
+    ["", 0],
+    ["", 0],
+    ["", 0],
+    ["", 0],
+  ]); // porotcu zatim nebylo mene nez sedm
   const [checked, setChecked] = useState(false);
 
   const categories = ["Kategorie", "E", "D", "C", "B", "A"];
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePoradiChange = (e) => {
+    setFormData({
+      ...formData,
+      ["pary"]: e.target.value.split("/")[1],
+      ["umisteni"]: e.target.value.split("/")[0],
+    });
   };
   const handleJudgeChange = (index, input) => {
     const newJudges = [...judges];
@@ -55,7 +73,9 @@ export default function AddCompetition() {
           newJudges[index] = [notIn[i][0], 1];
         }
         setJudges(newJudges);
-        alert("jeden ze soudcu jeste neni v databazi musis ho pridat");
+        alert(
+          `presne ${notIn.length} soudcu neni v databazi, chces je pridat?`,
+        );
       }
     } catch (err) {
       alert("eror kokote");
@@ -80,6 +100,8 @@ export default function AddCompetition() {
         points: "",
         finals: "",
         date: "",
+        pary: "",
+        umisteni: "",
       });
       let names = [];
       for (let i = 0; i < judges.length; i++) {
@@ -90,7 +112,16 @@ export default function AddCompetition() {
         id: id,
       });
 
-      alert(vysledky.message);
+      setJudges([
+        ["", 0],
+        ["", 0],
+        ["", 0],
+        ["", 0],
+        ["", 0],
+        ["", 0],
+        ["", 0],
+      ]);
+      alert(vysledky.data.message);
     } catch (error) {
       console.error("Spadlo ti addcomp:", error);
       //TODO create special eror for duplicate name entry.
@@ -100,7 +131,7 @@ export default function AddCompetition() {
   const addJudge = async (name, index) => {
     try {
       const response = await axios.post("api/addjudge", { name: name });
-      alert("pridal jsem tam toho typka", response.data.name);
+      alert(`pridal jsem tam toho typka ${response.data.name}`);
       let newJudges = [...judges];
       newJudges[index] = [name, 0];
       setJudges(newJudges);
@@ -164,6 +195,15 @@ export default function AddCompetition() {
             value={formData.date}
             onChange={handleChange}
             required
+          />
+          <br />
+          Dopadli jste?
+          <input
+            type="text"
+            name="poradi"
+            value={formData.umisteni && `${formData.umisteni}/${formData.pary}`}
+            placeholder="kolikaty / z kolika"
+            onChange={handlePoradiChange}
           />
           <br />
           Máte F?

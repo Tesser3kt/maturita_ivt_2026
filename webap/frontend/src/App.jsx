@@ -1,8 +1,8 @@
 import AddJudge from "./addcomps/add_judge.jsx";
 import AddCompetition from "./addcomps/add_competition.jsx";
-import AddVysledky from "./addcomps/add_vysledky.jsx";
+import ChooseCompetition from "./addcomps/choose_competition.jsx";
 
-import ViewJudge from "./viewcomps/view_judge.jsx";
+import ViewJudgeSuccess from "./viewcomps/view_judge_success.jsx";
 import ViewCompPoints from "./viewcomps/view_comp_points.jsx";
 
 import FeatureButton from "./feature_button.jsx";
@@ -14,8 +14,13 @@ function App() {
   const [viewFeature, setViewFeature] = useState("");
   const [addFeature, setAddFeature] = useState("");
 
-  const viewFeatures = ["ViewJudge", "ViewCompPoints", "Option 3", "Option 4"];
-  const addFeatures = ["AddJudge", "AddCompetition", "AddVysledky"];
+  const viewFeatures = [
+    "ViewJudgeSuccess",
+    "ViewCompPoints",
+    "Option 3",
+    "Option 4",
+  ];
+  const addFeatures = ["AddJudge", "AddCompetition", "ChooseCompetition"];
   return (
     <>
       <div className="wholeting">
@@ -51,13 +56,13 @@ function App() {
         </div>
         <div className="features">
           <div className="viewing">
-            {viewFeature == "ViewJudge" && <ViewJudge />}
+            {viewFeature == "ViewJudgeSuccess" && <ViewJudgeSuccess />}
             {viewFeature == "ViewCompPoints" && <ViewCompPoints />}
           </div>
           <div className="adding">
             {addFeature == "AddJudge" && <AddJudge />}
             {addFeature == "AddCompetition" && <AddCompetition />}
-            {addFeature == "AddVysledky" && <AddVysledky />}
+            {addFeature == "ChooseCompetition" && <ChooseCompetition />}
           </div>
         </div>
       </div>

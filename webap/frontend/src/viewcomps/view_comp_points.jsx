@@ -17,7 +17,7 @@ export default function ViewCompPoints() {
         setNumbers(response.data);
       } catch (err) {
         console.log(err);
-        alert("aaaaaaaaaaaa");
+        alert("je to v kunde");
       }
     };
     request();

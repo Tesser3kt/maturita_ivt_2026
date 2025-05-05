@@ -64,13 +64,30 @@ button {
   gap: 0.2rem;
 }
 
-form {
+.form {
   display: flex;
-  flex-direction: column;
 }
 
 input {
   margin: 1rem;
+}
+
+.vysledkyForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons>button {
+  flex-grow: 1;
 }
 
 #notin {

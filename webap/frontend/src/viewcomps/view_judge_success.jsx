@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Graph from "./graph.jsx";
 
-export default function ViewJudge() {
+export default function ViewJudgeSuccess() {
   const [name, setName] = useState("");
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState(null);
   const [options, setOptions] = useState([]);
+
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const allItems = async () => {
@@ -18,7 +20,7 @@ export default function ViewJudge() {
       }
     };
     allItems();
-  },[]);
+  }, []);
 
   const filteredItems = options.filter((item) =>
     item.toLowerCase().includes(name.toLowerCase()),
@@ -32,7 +34,6 @@ export default function ViewJudge() {
     e.preventDefault(); // Prevent form reload
 
     try {
-      console.log(name);
       const response = await axios.get(`api/getjudge?name=${name}`);
 
       // If successful, set the user data to be displayed
@@ -44,6 +45,13 @@ export default function ViewJudge() {
       setUserData(null);
       setError("User not found");
       console.error(err);
+    }
+
+    try {
+      const response = await axios.get(`api/getjudgesuccess?name=${name}`);
+      console.log(response.data.message);
+    } catch (err) {
+      console.log(err);
     }
   };
 
@@ -70,8 +78,10 @@ export default function ViewJudge() {
 
         <button type="submit">Search</button>
       </form>
+
       {error && <div>{error}</div>}
-      // display the user data in some way
+
+      {userData && <p>Vybral sis: {userData.name} </p>}
     </div>
   );
 }
