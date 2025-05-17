@@ -1,0 +1,13 @@
+{% block header %}
+<nav class="nav">
+	<ul class="navbar">
+		{% for index, item in enum_menu %}
+		{% if index % 2 == 0 %}
+		<li class="nav-item"><strong>{{ item }}</strong></li>
+		{% else %}
+		<li class="nav-item">{{ item }}</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</nav>
+{% endblock %}

@@ -276,7 +276,7 @@ zadání lehkých úloh podle objemu probrané látky.**
         - kořenový prvek (v Reactu div id="root", kam React loaduje obsah stránky),
         - reload jednotlivých komponent na základě změny hodnoty proměnné (pořádně vysvětlit, jak tohle funguje),
         - hooky
-22. Backend –- Python (Flask, Django), SQL a databáze
+22. Backend –- Python (Flask)
 
 ### Zbytek
 23. ~~Licence, etika, zákony, hygiena~~ **NEBUDE**
