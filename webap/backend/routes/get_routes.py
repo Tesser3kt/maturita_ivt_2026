@@ -76,29 +76,84 @@ def get_routes(app):
         print(id)
         data = get_judge_data(id)
         procesed = proces_judge_data(data)
-        return jsonify({'message': 'koule'})
+        formated = [{'x': index, 'y': item}
+                    for index, item in enumerate(procesed)]
+        return jsonify({'message': 'koule', 'data': formated})
 
     def proces_judge_data(data):
-        pass
+        constant = 1.3
+        skore = []
+        for soutez in data:
+            print(soutez)
+            hodnoceni_tancu = []
+
+            for _ in range(len(soutez[0][1:])):
+                hodnoceni_tancu.append(0)
+
+            vahy = []
+
+            for i, kolo in enumerate(soutez):
+                ci = kolo[0]
+                kola = len(soutez)
+
+                for j, dance in enumerate(kolo[1:]):
+                    try:
+                        znamka = int(dance)
+                        # r = (-2*znamka - ci-1)/(ci-1)
+                        r = (((ci+1)/2) - (znamka))/((ci-1)/2)
+                        hodnoceni_tancu[j] += r
+                        if j == 0:
+                            vahy.append(1)
+                        print('finalove hodnoceni', j, 'tance:', r)
+
+                    except:
+                        cii = soutez[i+1][0]
+                        if dance == '-':
+                            r = -1
+                        else:
+                            r = 1
+                        w = ((ci - cii) / (ci-1))*constant**(i-kola)
+                        print('normalni hodnoceni', j, 'tance:', w, r)
+                        if j == 0:
+                            vahy.append(w)
+                        hodnoceni_tancu[j] += r*w
+            vahus = sum(vahy)
+            relativni_hodnoceni = []
+            for hodnoceni in hodnoceni_tancu:
+                relativni_hodnoceni.append(hodnoceni/vahus)
+
+            vysledne_hodnoceni = sum(
+                relativni_hodnoceni)/len(relativni_hodnoceni)
+            skore.append(vysledne_hodnoceni)
+        print(skore)
+        return skore
 
     def get_judge_data(id):
         command = db.select(SoutezePorotci).filter_by(porotci_id=id)
         souteze = db.session.execute(command).all()
         print(souteze)
+        hodnoceni = []
         for dato in souteze:
-            print(dato)
+
             id = dato[0].souteze_id
             index = dato[0].porotce_index
             vysledky = db.session.execute(
                 db.select(Vysledky).filter_by(soutez_id=id)).all()
+            hod = []
             for vysledek in vysledky:
+                kolo = [vysledek[0].pary]
                 for dance in vysledek[0].get_dances():
-                    print(vysledek[0], dance)
-                    hodnoceni = getattr(vysledek[0], dance)[index]
+                    # TODO tady mozna budu chtit to davat dohromady po tancich
+                    # abych se mohl podivat jak se porotci X libil tanec Y ale
+                    # to tedka prcam.
+                    h = getattr(vysledek[0], dance)[index]
 
-        return jsonify({'message': 'koule'})
+                    kolo.append(h)
+                hod.append(kolo)
+            hodnoceni.append(hod)
+        return hodnoceni
 
-    @app.route('/api/alljudges', methods=['GET'])
+    @ app.route('/api/alljudges', methods=['GET'])
     def all_judges():
         judges = Porotci.query.all()
         judges = [judge.name for judge in judges]

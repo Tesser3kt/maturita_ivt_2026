@@ -25,6 +25,11 @@ button {
   align-self: flex-start;
 }
 
+.nadpis {
+  display: flex;
+  justify-content: space-around;
+}
+
 .choosers>div {
   background: lightgray;
   max-width: 30vw;

@@ -52,6 +52,7 @@ class Vysledky(db.Model):
     paso: Mapped[str] = mapped_column(String(100), nullable=True, unique=False)
     round: Mapped[int] = mapped_column(
         String(100), unique=False, nullable=False)
+    pary: Mapped[int] = mapped_column(Integer, nullable=False, unique=False)
 
     def get_dances(self) -> list:
         dances = ['samba', 'chacha', 'jive']

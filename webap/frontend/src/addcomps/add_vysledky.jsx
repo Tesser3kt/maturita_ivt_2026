@@ -52,7 +52,7 @@ export default function AddVysledky({ id }) {
 
   const handleKeys = (e) => {
     if (
-      ["x", "-", "Backspace", "Tab", "ArrowRight", "ArrowLeft"].indexOf(
+      ["x", "-", "Backspace", "Tab", "ArrowRight", "ArrowLeft", "v"].indexOf(
         e.key,
       ) == -1
     ) {
@@ -62,9 +62,21 @@ export default function AddVysledky({ id }) {
 
   const handleFinalKeys = (e) => {
     if (
-      ["1", "2", "3", "4", "5", "6", "7", "8", "Backspace", "Tab"].indexOf(
-        e.key,
-      ) == -1
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "Backspace",
+        "Tab",
+        "ArrowRight",
+        "ArrowLeft",
+        "v",
+      ].indexOf(e.key) == -1
     ) {
       e.preventDefault();
     }
@@ -92,8 +104,9 @@ export default function AddVysledky({ id }) {
         id: id,
         category: category,
       });
+      setData([]);
+      setFinals();
 
-      //clear data and finals
       console.log(response.message);
     } catch (err) {
       alert("je to v pice");
@@ -136,11 +149,13 @@ export default function AddVysledky({ id }) {
                     backgroundColor: assignStyle(dance, kolokey),
                   }}
                 >
-                  <p>{dance}</p>
-                  <p>
-                    {data[kolokey][dance] ? data[kolokey][dance].length : 0}/{" "}
-                    {judgeNum}
-                  </p>
+                  <div class="nadpis">
+                    <span>{dance}</span>
+                    <span>
+                      {data[kolokey][dance] ? data[kolokey][dance].length : 0}/{" "}
+                      {judgeNum}
+                    </span>
+                  </div>
                   <input
                     type="text"
                     value={info.dance}
@@ -152,6 +167,15 @@ export default function AddVysledky({ id }) {
                   />
                 </div>
               ))}
+              <div className="vysledky">
+                <p> koule pero </p>
+                <input
+                  type="number"
+                  value={info.pary}
+                  onChange={handleOnChange}
+                  data-index={kolokey}
+                />
+              </div>
             </div>
           </div>
         ))}
@@ -173,6 +197,14 @@ export default function AddVysledky({ id }) {
                   />
                 </div>
               ))}
+              <div className="vysledky">
+                <p> koule pero </p>
+                <input
+                  type="number"
+                  value={finals.pary}
+                  onChange={handleFinalsChange}
+                />
+              </div>
             </div>
           </div>
         )}

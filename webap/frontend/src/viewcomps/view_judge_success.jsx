@@ -8,7 +8,7 @@ export default function ViewJudgeSuccess() {
   const [error, setError] = useState(null);
   const [options, setOptions] = useState([]);
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
 
   useEffect(() => {
     const allItems = async () => {
@@ -49,7 +49,8 @@ export default function ViewJudgeSuccess() {
 
     try {
       const response = await axios.get(`api/getjudgesuccess?name=${name}`);
-      console.log(response.data.message);
+      console.log(response.data);
+      setData(response.data.data);
     } catch (err) {
       console.log(err);
     }
@@ -82,6 +83,8 @@ export default function ViewJudgeSuccess() {
       {error && <div>{error}</div>}
 
       {userData && <p>Vybral sis: {userData.name} </p>}
+
+      {data && <Graph data={data} />}
     </div>
   );
 }

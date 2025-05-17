@@ -89,10 +89,6 @@ class Vysledky(db.Model):
             dances.append('paso')
         return dances
 
-    # with app.app_context():
-    # db.drop_all()
-    # db.create_all()
-
 
 @app.route('/api', methods=['GET'])
 def create_main():
