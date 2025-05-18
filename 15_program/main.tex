@@ -53,6 +53,15 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Procedura vs funkce}
+    \begin{itemize}
+        \item Procedura i funkce jsou bloky kódu (soubor příkazů), které se spustí, když se procedura nebo funkce zavolá.
+        \item Ulehčuje to, když se jeden kus kódu používá velmi opakovaně.
+        \item Mohou mít vstupní hodnoty se kterými pracují.
+        \item Rozdíl mezi procedurou a funkcí je, že procedura žádnou hodnotu nevrací. Funkce naopak ano.
+    \end{itemize}
+\end{frame}
+
 \subsection{Proceduranální vs. funkcioanální jazyky}
 \begin{frame}{Proceduranální vs. funkcioanální jazyky}
     \begin{columns}
@@ -79,96 +88,107 @@
 
 
 
-\subsection{Způob překladu}
-\begin{frame}{Způob překladu}
+\subsection{Způosb překladu}
+\begin{frame}{Způsob překladu}
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.7\textwidth}
             \textbf{Kompilované} -- C, Java, Cobol
             \begin{itemize}
-                \item Před spuštěním se strčí do zázračného stroje, který to přeloží do strojového kódu
-                \item 
+                \item Před spuštěním se strčí do zázračného stroje, který to přeloží do strojového kódu.
+                \item Kompilují se do spustitelného souboru (například .exe)
+                \item Kompilují se do nižších vrstev, například z high level do machine code přes low level.
+                \item Po kompilaci nelze jít zpátky nahoru do vyšších vrstev. - Ztratí se hrozně moc informací o kódu, například všechna sémantika (syntax).
+                \item Programy jsou pak optimalizovanější.
+                \item Kód je \uv{schovaný}, super pro closed source.
+                \item Musí se zkompilovat.
             \end{itemize}
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.3\textwidth}
             \textbf{Interpretované} -- Python, BASIC, Shell
             \begin{itemize}
-                \item Překládá za letu $\Rightarrow$ je pomalejší
-                \item 
+                \item Překládá za letu $\Rightarrow$ je pomalejší.
+                \item Snadná přenositelnost, rychlé testování.
             \end{itemize}
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Source code, assembly, low-level a \\ high-level jazyky}
+\begin{frame}{Source code, machine code, assembly, \\ low-level a high-level jazyky}
     \begin{itemize}
-        \item Source code – kód napsaný programátorem v čitelném jazyce (např. C, Python).
-\item Assembly – nízkoúrovňový jazyk blízký strojovému kódu, ale stále čitelnější pro člověka.
+        \item Source code (zdrojový kód) – kód napsaný programátorem v čitelném jazyce (např. C, Python).
+        \item Machine code (strojový kód) - binární kód, nejnižší úroveň, CPU instrukce
+\item Assembly – nízkoúrovňový jazyk blízký strojovému kódu, ale stále čitelnější pro člověka. Asembler se pak používá pro překlad do vrstvy strojového kódu.
 \item Low-level jazyky – blízko hardware, např. C, Rust. Používají ukazatele (pointers), což jsou adresy v paměti, které umožňují přímou manipulaci s daty.
 \item High-level jazyky – blíže lidské logice, např. Python, Java. Mají automatickou správu paměti (garbage collector), který čistí nevyužitou paměť, aby programátoři nemuseli ručně spravovat alokaci a dealokaci.
 \end{itemize}
 \end{frame}
-
-
-
-
-\section{Bonus: Recepty na špagety}
-\begin{frame}{Bonus}
-    amongus (nepodarili se zmensit :o)
-
-    \begin{minipage}{0.25\textwidth}
-        \centering
-    \begin{tikzpicture}
-        \amongUsIII{red}{blue}
-        \amongUsIII[xscale=-1,shift={(-12,0)}]{yellow}{blue}
-        \amongUsIII[shift={(12,0)},scale=0.5]{violet}{orange}
-        \amongUsIII[scale=-0.5,shift={(-30,-16)}]{blue}{green}
-        \end{tikzpicture}
-    \end{minipage}
-\end{frame}
-\begin{frame}{Recept na špagety Bolognese - 1}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \textbf{Ingredience:}
-            \tiny{
+\begin{frame}{Pokračování s důležitými pojmy}
     \begin{itemize}
-        \item 400 g mletého hovězího masa
-        \item 1 cibule
-        \item 2 stroužky česneku
-        \item 1 mrkev
-        \item 2 plechovky rajčatového protlaku
-        \item 200 ml červeného vína
-        \item 400 g špaget
-        \item Olivový olej
-        \item Sůl, pepř, oregano, bazalka
-        \item Parmazán na posypání
-    \end{itemize}}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-    \textbf{Postup:}
-    \tiny{
-    \begin{enumerate}
-        \item Na pánvi rozehřejte olivový olej a osmahněte na něm nadrobno nakrájenou cibuli a česnek.
-        \item Přidejte nastrouhanou mrkev a mleté maso. Orestujte, dokud maso nezhnědne.
-        \item Přilijte červené víno a nechte ho odpařit.
-        \item Přidejte rajčatový protlak, osolte, opepřete a přidejte oregano a bazalku. Nechte dusit na mírném ohni asi 30 minut.
-        \item Mezitím uvařte špagety podle návodu na obalu.
-        \item Podávejte špagety s omáčkou a posypané strouhaným parmezánem.
-    \end{enumerate}}
-        \end{column}
-    \end{columns}
-    
+        \item Garbage collector - automaticky uvolňuje paměť, kterou nepoužíváme.
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Recept na špagety Bolognese - 2}
-    \href{https://github.com/kubasim}{Kubův github (link), ale má ty recepty private (ty špagety jsou až moc dobré, aby si mohl dovolit sdílet recept (dostal by všechny Michelinské hvězdy a stal by se milionářem (život by pak byl moc jednoduchej))).}
-\end{frame}
-\begin{frame}{Recept na špagety Bolognese - 3}
-    \begin{figure}
-        \centering
-         \includegraphics[width=0.30\textwidth]{obrazek}
-        \caption{Eric} 
-    \end{figure}
-\end{frame}
+
+
+
+% \section{Bonus: Recepty na špagety}
+% \begin{frame}{Bonus}
+%     amongus (nepodarili se zmensit :o)
+
+%     \begin{minipage}{0.25\textwidth}
+%         \centering
+%     \begin{tikzpicture}
+%         \amongUsIII{red}{blue}
+%         \amongUsIII[xscale=-1,shift={(-12,0)}]{yellow}{blue}
+%         \amongUsIII[shift={(12,0)},scale=0.5]{violet}{orange}
+%         \amongUsIII[scale=-0.5,shift={(-30,-16)}]{blue}{green}
+%         \end{tikzpicture}
+%     \end{minipage}
+% \end{frame}
+% \begin{frame}{Recept na špagety Bolognese - 1}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \textbf{Ingredience:}
+%             \tiny{
+%     \begin{itemize}
+%         \item 400 g mletého hovězího masa
+%         \item 1 cibule
+%         \item 2 stroužky česneku
+%         \item 1 mrkev
+%         \item 2 plechovky rajčatového protlaku
+%         \item 200 ml červeného vína
+%         \item 400 g špaget
+%         \item Olivový olej
+%         \item Sůl, pepř, oregano, bazalka
+%         \item Parmazán na posypání
+%     \end{itemize}}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%     \textbf{Postup:}
+%     \tiny{
+%     \begin{enumerate}
+%         \item Na pánvi rozehřejte olivový olej a osmahněte na něm nadrobno nakrájenou cibuli a česnek.
+%         \item Přidejte nastrouhanou mrkev a mleté maso. Orestujte, dokud maso nezhnědne.
+%         \item Přilijte červené víno a nechte ho odpařit.
+%         \item Přidejte rajčatový protlak, osolte, opepřete a přidejte oregano a bazalku. Nechte dusit na mírném ohni asi 30 minut.
+%         \item Mezitím uvařte špagety podle návodu na obalu.
+%         \item Podávejte špagety s omáčkou a posypané strouhaným parmezánem.
+%     \end{enumerate}}
+%         \end{column}
+%     \end{columns}
+    
+% \end{frame}
+
+% \begin{frame}{Recept na špagety Bolognese - 2}
+%     \href{https://github.com/kubasim}{Kubův github (link), ale má ty recepty private (ty špagety jsou až moc dobré, aby si mohl dovolit sdílet recept (dostal by všechny Michelinské hvězdy a stal by se milionářem (život by pak byl moc jednoduchej))).}
+% \end{frame}
+% \begin{frame}{Recept na špagety Bolognese - 3}
+%     \begin{figure}
+%         \centering
+%          \includegraphics[width=0.30\textwidth]{obrazek}
+%         \caption{Eric} 
+%     \end{figure}
+% \end{frame}
 \begin{frame}{Video co vše vysvětluje}
     \begin{figure}
         \href{https://www.youtube.com/watch?v=2lVDktWK-pc&pp=ygUhcHJvZ3JhbW1pbmcgbGFuZ3VhZ2VzIGZvciBkdW1taWVz}{link}
