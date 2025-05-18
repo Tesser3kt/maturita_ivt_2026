@@ -277,6 +277,9 @@ zadání lehkých úloh podle objemu probrané látky.**
         - reload jednotlivých komponent na základě změny hodnoty proměnné (pořádně vysvětlit, jak tohle funguje),
         - hooky
 22. Backend –- Python (Flask)
+    - Backend vs. frontend
+    - Princip routování podle cesty a šablon
+    - Konkrétně Flaskové šablony a základní funkce
 
 ### Zbytek
 23. ~~Licence, etika, zákony, hygiena~~ **NEBUDE**
