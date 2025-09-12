@@ -1,4 +1,4 @@
-# Maturita z IVT 2024/25
+# Maturita z IVT 2025/26
 
 ## Co tu je?
 - seznam maturitních okruhů IVT 2025/26 ([vypsaný zde](#maturitní-okruhy))
