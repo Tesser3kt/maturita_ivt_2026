@@ -14,6 +14,8 @@ Vzorová zadání lehkých úloh budou postupně přibývat [zde](#lehké-úlohy
 **Následující seznam bude postupně doplňován o detaily k teoretickým úlohám a o
 zadání lehkých úloh podle objemu probrané látky.**
 
+**Něco jsem zapomněl/přidal navíc/špatně napsal? Opravte mě.**
+
 ### Hardware
 1. Data, informace, bit, byte. Číselné soustavy – převody a početní operace
     - Co je datum. Co je informace. Příklady.
@@ -23,8 +25,29 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Číselné soustavy: hlavně dvojková, osmičková, šestnáctková. Příklady použití.
     - Základní aritmetické operace v číselných soustavách.
     - Převod desítková <--> dvojková/osmičková/šestnáctková.
-    - *Něco jsem zapomněl/přidal navíc/špatně napsal? Opravte to.*
 2. Hardware – základní deska, CPU, vnitřní paměti
+    - CPU 
+        - FDE (Fetch, Decode, Execute) cyklus
+        - Co je registr. **CIR** (Current Instructions Register), **PC** (Program Counter)
+        - Pamětové instrukce:
+          - ALLOCATE
+          - STORE
+          - LOAD
+        - Řídící instrukce:
+          - JUMP
+          - JUMP-IF
+        - Počítací instrukce:
+          - ADD
+          - COMPARE
+        - Co je logická brána. Poznat (a umět vysvětlit fyzikální princip) brán **OR**, **AND**, **NOT** a **NAND**.
+        - Znát princip funkce základních logických obvodů (paměť a sčítač) -- odkaz [zde](https://circuitverse.org/users/259770/projects/basic-circuits-1a38e0ec-9ab0-475b-8abc-fa5c2e89c707).
+    - Vnitřní paměť
+        - Volatilní vs. nevolatilní paměť
+        - Rozdíl mezi **SRAM** a **DRAM**, znát některé typy nevlatilních pamětí (**NVRAM**, **ROM**).
+        - Použití volatilních a nevolatilních pamětí
+    - Základní deska
+        - Co je a k čemu je.
+        - Popis důležitých částí
 3. Externí paměť (HDD, SSD, CD, DVD, kazety, diskety), záznam dat
 4. I/O zařízení
 5. Tiskárny (Pro spravne zobrazeni prezentace pouzijte Okular nebo Adobe Acrobat)
