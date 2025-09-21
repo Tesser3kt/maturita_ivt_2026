@@ -49,6 +49,42 @@ zadání lehkých úloh podle objemu probrané látky.**
         - Co je a k čemu je.
         - Popis důležitých částí
 3. Externí paměť (HDD, SSD, CD, DVD, kazety, diskety), záznam dat
+    - Historie
+	- první nevolatilní média: "punchcards" a "punchtape" -- ručně/strojově ražené díry v papíru
+	- první implementace magnetického zápisu dat - ze začátku sekvenční, později pokusy o náhodný přístup (válec)
+    - Typy energeticky nezávislé paměti dnes:
+	- **HDD** (pevný disk) - moderní využití magnetizace k uchování dat
+		- Součásti:
+			- Plotny - pevné disky s vrstvou lehce magnetizovatelného materiálu
+			- Hlavy - zařízení pro precizní detekci změny magnetického pole a jeho tvorby (čtení a zápis na disk)
+			- Rameno - aktuátor - motor = mechanická zařízení
+			- Obvodová deska - decoding a "hodiny"
+		- Organizace dat (geometrie disku):
+			- Stopy = soustředné kružnice
+			- Sektor = nejmenší adresovatelná jednotka disku
+		- Vlastnosti:
+			- vysoká kapacita za nízkou cenu
+			- dostatečná rychlost i pro náročnější aplikace (jako např. systém)
+			- náchylnost k mechanickému poškození
+	- **Optická úložiště** (CD/DVD/Blu-ray) - podobný setup jako u disket, jen místo magnetismu využíváme fyzické prohlubně
+		- Popis:
+			- disk má prohlubně a vyvýšeniny, které jinak lámou světlo
+			- jejich obsah čteme odrazem laseru
+			- CD, DVD a Blu-ray se liší barvou laseru a hustotou zápisu
+		- Data:
+			- rozlišujeme mezi **ROM** (read only), **WORM** (write once, read many) a přepsatelnými disky
+		- Vlastnosti:
+			- perfektní médium pro distribuci a archivaci dat (levná výroba a vysoká trvanlivost)
+			- pomalý provoz + omezená možnost zápisu 
+	- **Flash paměť** - nevolatilní paměť bez mechanických čáští (pouze obvody)
+		- Flash paměť je velký soubor "buněk" = FGMOS (tranzistor s plovoucím hradlem - s nastavitelným hraničním napětím - lehce změřitelná hodnota, která přežije i bez přívodu proudu)
+		- Vlastnosti:
+			- vysoká rychlost
+			- mechanická výdrž
+			- omezený počet přepisů
+			- vysoká cena
+    - Volba typu úložiště záleží na aplikaci
+
 4. I/O zařízení
 5. Tiskárny (Pro spravne zobrazeni prezentace pouzijte Okular nebo Adobe Acrobat)
 6. Technologie displejů
