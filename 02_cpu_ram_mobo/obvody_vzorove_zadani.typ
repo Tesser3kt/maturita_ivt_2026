@@ -8,6 +8,10 @@
 #set text(
   size: 12pt,
   lang: "cz",
+  font: "TeX Gyre Schola",
+)
+#show math.equation: set text(
+  font: "TeX Gyre Schola Math",
 )
 #show raw: set text(
   size: 11pt,
