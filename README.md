@@ -223,7 +223,22 @@ zadání lehkých úloh podle objemu probrané látky.**
 		- extended STAR - hvězdičky mezi hvězdičkami
 		- STAR-RING - RING mezi STAR topologiemi
 13. Schéma TCP/IP, protokoly a IP adresy
+    - Co je a k čemu je protokol. Základní příklady.
+    - Důležité části jakéhokoliv protokolu.
+    - Příklady protokolů v počítačových sítích.
+    - Schéma modelů ISO/OSI, specificky model TCP/IP
+        - aplikační vrstva (HTTP(S), SSH, NTP, FTP, SMTP, ...),
+        - transportní vrstva (TCP a UDP, porty),
+        - síťová vrstva (IP a IP adresa),
+        - fyzická vrstva (Ethernet a MAC adresa).
 14. Internet – vývoj internetu, architektura, služby
+    - Co jsou a k čemu jsou internety?
+    - Webové stránky (jak fungují, HTTP protokol, princip requestu).
+    - E-mail (jak funguje, SMTP pro odesílání, POP nebo IMAP pro přijímání).
+    - Přenos audia a videa po internetu (protokoly VoIP nebo IM).
+    - Domain Name System
+        - Co to je a k čemu to je.
+        - Co tvoří jméno domény a jak se podle něj zjistí IP adresa serveru.
 
 ### Programování
 15. Počítačový program, programovací jazyk
@@ -353,8 +368,17 @@ zadání lehkých úloh podle objemu probrané látky.**
     - Jak se zákony stavějí k licencím softwaru.
     - Pár etických vodítek.
 24. Grafika, modely barev, barevná schémata
-25. Textové editory
-26. Tabulkové kalkulátory
+    - Rastrová grafika: representace obrázku jako mřížky pixelů
+        - RGB a CMYK (popis, rozdíly, použití),
+        - HSL a HSV ("lidská" representace barev, princip)
+        - YUV (striktní oddělení barevné a světelné složky, komprese)
+    - Vektorová grafika: representace obrázku jako množiny geometrických objektů (křivek, polygonů, ...)
+25. Tabulkové kalkulátory (prostě Excel)
+    - Co to je a k čemu to je.
+    - Schopnost ovládat Excel
+        - absolutní a relativní odkaz na buňky
+        - umět hledat, použít a nořit funkce
+        - podmínky
 
 ----------------------------
 
@@ -369,45 +393,41 @@ zadání lehkých úloh podle objemu probrané látky.**
 3. Převeďte číslo z desítkové soustavy do soustavy
    dvojkové/osmičkové/šestnáctkové. Postup vysvětlete.
 4. Zapojte základní komponenty PC (CPU a RAM) do základní desky a spusťte jej.
-5. Ze zadané logické formule sestrojte logický obvod.
-6. Napište logickou formuli odpovídající zadanému logickému obvodu.
-7. Určete výstupy logického obvodu pro zadaný vstup.
-8. Nakreslete diagram HDD (disk, čtecí hlava, sektory...) a vysvětlete na něm princip funkce zařízení. 
-9. Nakreslete diagram optické myši a vysvětlete na něm princip funkce zařízení.
-10. Nakreslete diagram klávesnice (membránové/mechanické) a vysvětlete na něm princip funkce zařízení.
-11. Nakreslete diagram tiskárny (laserové/inkoustové) a vysvětlete na něm princip funkce zařízení.
-12. Nakreslete diagram LCD panelu a vysvětlete na něm princip funkce zařízení.
-13. Nakreslete diagram DLP projektoru a vysvětlete na něm princip funkce zařízení.
+5. Určete výstupy logického obvodu pro zadaný vstup.
+6. Nakreslete diagram HDD (disk, čtecí hlava, sektory...) a vysvětlete na něm princip funkce zařízení. 
+7. Nakreslete diagram optické myši a vysvětlete na něm princip funkce zařízení.
+8. Nakreslete diagram klávesnice (membránové/mechanické) a vysvětlete na něm princip funkce zařízení.
+9. Nakreslete diagram tiskárny (laserové/inkoustové) a vysvětlete na něm princip funkce zařízení.
+10. Nakreslete diagram LCD panelu a vysvětlete na něm princip funkce zařízení.
+11. Nakreslete diagram DLP projektoru a vysvětlete na něm princip funkce zařízení.
 
 ### Historie počítačů
 
-14. Napište kód (pseudokód, Python, ...) implementující zadaný diagram datové cesty a řídící FSM.
-15. Nakreslete diagram datové cesty a řídící FSM odpovídající zadanému kusu kódu v Pythonu.
+12. Napište kód (pseudokód, Python, ...) implementující zadaný diagram datové cesty a řídící FSM.
+13. Nakreslete diagram datové cesty a řídící FSM odpovídající zadanému kusu kódu v Pythonu.
 
 ### Operační systém
 
-16. Uložte danou posloupnost dat (representující obrázek či audio) i s hlavičkou podle zadání.
-17. Defragmentujte daný blok paměti podle zadání.
-18. Zkomprimujte daný soubor (obrázek či audio) run-length kompresí či (Huffmanovým) stromem priorit.
+14. Uložte danou posloupnost dat (representující obrázek či audio) i s hlavičkou podle zadání.
+15. Defragmentujte daný blok paměti podle zadání.
+16. Zkomprimujte daný soubor (obrázek či audio) run-length kompresí či (Huffmanovým) stromem priorit.
 
 ### Počítačové sítě, internet
 
-19. Navrhněte topologii počítačové sítě podle zadaných kritérií.
+17. Navrhněte topologii počítačové sítě podle zadaných kritérií.
 
 ### Programování
 
-20. Nakreslete flowchart daného programu v Pythonu.
-21. Přepiště zadaný flowchart do libovolného programovacího jazyka.
-22. Implementujte uvedenou metodu spojového seznamu.
-23. Debuggujte zadaný program.
+18. Nakreslete flowchart daného programu v Pythonu.
+19. Přepiště zadaný flowchart do libovolného programovacího jazyka.
+20. Implementujte uvedenou metodu spojového seznamu.
+21. Debuggujte zadaný program.
 
 ### Web
 
-24. Vyrobte webovou stránky podle obrázkové předlohy.
-25. Doprogramujte nějakou základní funkcionalitu do Reactové aplikace.
-26. Nějaká Flask věc. **TODO**
+22. Vyrobte webovou stránky podle obrázkové předlohy.
+23. Doplňte jistou funkci Flask aplikace podle zadání.
 
 ### Zbytek
 
-27. Vyrobte zadaný obrázek ve Photoshopu (použité vrstvy budete mít ve složce).
-28. Vyřešte zadanou úlohu v Excelu (nějaká základní statistika z obsahu buněk).
+24. Vyřešte zadanou úlohu v Excelu (nějaká základní statistika z obsahu buněk).
